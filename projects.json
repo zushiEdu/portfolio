@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Circuit Layout Creator",
+    "content": "Circuit Layout Creator or CLC is an open source, circuit layout creation website. This project was inspired by DIYLC, with the main difference being that this project is compatable on all devices as long as they have a web broswer. As this project is currently being supported by a small group of people and developed by a single developer, lots of features are being worked on. As it stands a basic circuit can be created from start to finish.",
+    "date": "2023-04-03",
+    "repoUrl": "https://github.com/zushiEdu/circuit-layout-creator"
+  },
+  {
+    "title": "Farmunation",
+    "content": "Farmunation is a 2D farming game that was inspired by my time on my grandparents farms. The project took inspiration from games such as Farming Simulator and John Deere's: Harvest in the Heartland. The idea around this game was to give the player complete freedom and near limitless space for them to grow and develop their farm. Both Farming Simulator and Harvest in the Hearthland limit your map in some way. This game is not finished and still has a lot to complete.",
+    "date": "2022-05-11",
+    "repoUrl": "https://github.com/zushiEdu/Farmunation"
+  },
+  {
+    "title": "The Wonderful and Hodgepodged Reference Library",
+    "content": "This website contains all of the links and references i've used in school projects starting from March 19th 2023. This website was created for fun after the shear amount of references I had to include in one of my projects. I had the thought that `maybe it would be funny to have a website I can reference for every school project that would include everything ive ever read/used. That way I would never have to create a reference list ever again. Plus if any person asks how I know the random facts I know, I can actually point them to somewhere. This website is purely for fun and was used as a website to improve my Javascript and CSS skills. All the links on this website are sorted alphabetically.",
+    "date": "2023-03-19",
+    "repoUrl": "https://github.com/zushiEdu/references"
+  }
+]
