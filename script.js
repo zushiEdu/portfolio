@@ -57,3 +57,16 @@ fetch('projects.json')
             projectsContainer.appendChild(section);
         });
     });
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+if (urlParams.get('type') == "adhd") {
+    const bonusContent = document.getElementById("bonus-content");
+    const video = document.createElement("iframe");
+    video.src = "https://youtube.com/embed/ChBg4aowzX8?t=200&autoplay=1&mute=1&showinfo=0&controls=0&autohide=1&modestbranding";
+    video.frameBorder = "0";
+    video.width = "100%";
+    video.height = "100%";
+    video.allow = 'autoplay';
+    bonusContent.appendChild(video);
+}
