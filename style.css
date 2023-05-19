@@ -54,7 +54,7 @@ li{
     margin:0;
 }
 
-a{
+a{   
     color: rgb(155, 156, 157);
     margin:0;
 }
@@ -67,4 +67,40 @@ ul{
 p{
     color: rgb(155, 156, 157);
     margin:0;
+}
+
+@media only screen and (max-width:1024px){
+    body{
+        width: 90%;
+    }
+    p{
+        font-size: 50px;
+    }
+    h1{
+        font-size:60px;
+    }
+    h2{
+        font-size: 50px;
+        margin-bottom: 1rem;
+    }
+    a{
+        font-size:50px;
+    }
+    section{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    ul{
+        margin-bottom: 3rem;
+    }
+    img{
+        display: none;
+    }
+    #informationDiv{
+        max-width: 850px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: inline-block;
+        white-space: nowrap;
+    }
 }

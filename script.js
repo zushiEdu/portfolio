@@ -33,6 +33,7 @@ fetch('projects.json')
             // Information Div
             const informationDiv = document.createElement('div');
             informationDiv.style = 'margin-top:1rem, display:flex';
+            informationDiv.id = 'informationDiv';
 
             // Date
             const date = document.createElement('p');
