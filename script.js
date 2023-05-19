@@ -8,17 +8,27 @@ fetch('projects.json')
         projects.forEach(project => {
             // Create a new section for each project
             const section = document.createElement('section');
+            section.id = project.title.replaceAll(" ", "_");
+
+            const text = document.createElement('div');
+            text.id = "textContent";
+
+            if (project.img != null) {
+                const image = document.createElement('img');
+                image.src = project.img;
+                section.appendChild(image);
+            }
 
             // Add project content to the section
             const title = document.createElement('h2');
             title.textContent = project.title;
-            section.appendChild(title);
+            text.appendChild(title);
 
             // Content
             const content = document.createElement('p');
             content.textContent = project.content;
             content.style = 'margin-bottom:1rem';
-            section.appendChild(content);
+            text.appendChild(content);
 
             // Information Div
             const informationDiv = document.createElement('div');
@@ -38,9 +48,11 @@ fetch('projects.json')
             link.target = '_blank';
             informationDiv.appendChild(link);
 
-            section.appendChild(informationDiv);
+            text.appendChild(informationDiv);
 
             // Append the section to the container
+            section.appendChild(text);
+
             projectsContainer.appendChild(section);
         });
     });
