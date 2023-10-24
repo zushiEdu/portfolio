@@ -1,21 +1,20 @@
 * {
-    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
+    font-family: -apple-systrem,BlinkMacSystremFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
 }
 
 section{
     background-color: rgb(46, 46, 51);
-    border-radius: 1em;
-    padding: 1em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    display: flex;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
 }
 
 img{
-    margin-right: 1em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    max-height: 15em;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-height: 15rem;
 }
 
 ul{
@@ -25,13 +24,40 @@ ul{
 }
 
 footer{
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 body{
-    width: 40em;
+    width: 70%;
     margin:auto;
     background-color: rgb(29, 30, 32);
+}
+
+table{
+    border-spacing:1rem;
+    width: 100%;
+}
+
+tr{
+    vertical-align: top;
+}
+
+td{
+    background-color: rgb(46, 46, 51);
+    border-radius: 1rem;
+    width: 50%;
+}
+
+img{
+    border-radius: 1rem;
+    float:left;
+    margin-right:1rem;
+    margin-bottom:0.5rem;
+    margin-top: 0.5rem;
+    max-width:300px;
+    max-height:200px;
+    width: auto;
+    height: auto;
 }
 
 h1{
@@ -41,7 +67,9 @@ h1{
 
 h2{
     color: rgb(218, 218, 219);
-    margin-top:0;
+    margin-top:1rem;
+    margin-left: 1rem;
+    margin-bottom: 0;
 }
 
 h3{
@@ -67,6 +95,7 @@ ul{
 p{
     color: rgb(155, 156, 157);
     margin:0;
+    text-align: left;
 }
 
 iframe{

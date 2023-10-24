@@ -3,21 +3,125 @@
     "title": "Circuit Layout Creator",
     "content": "Circuit Layout Creator or CLC is an open source, circuit layout creation website. This project was inspired by DIYLC, with the main difference being that this project is compatable on all devices as long as they have a web broswer. As this project is currently being supported by a small group of people and developed by a single developer, lots of features are being worked on. As it stands a basic circuit can be created from start to finish.",
     "date": "2023-04-03",
-    "repoUrl": "https://github.com/zushiEdu/circuit-layout-creator",
-    "img": "/Images/clcPreview.jpg"
+    "img": "/Images/clcPreview2.png",
+    "urls": [
+      {
+        "displayText": "Github",
+        "url": "https://github.com/zushiEdu/circuit-layout-creator"
+      },
+      {
+        "displayText": "Devpost",
+        "url": "https://devpost.com/software/circuit-layout-creator"
+      },
+      {
+        "displayText": "WebApp",
+        "url": "https://circuit-creator.netlify.app/"
+      }
+    ],
+    "display": true
+  },
+  {
+    "title": "2023-2024 Battle Bot",
+    "content": "Battle Bot for the HHSS 2023-2024 battle season. This bot uses a 4 1/2inch blade as its primary weapon, driven by a D2822 brushless motor. The drive train is powered by 25GA-370 motors controlled through dual L288N drivers and an Arduino Uno receiving bluetooth contorl inputs. The components in this robot are air cooled by a 50mm computer fan.",
+    "date": "2023-09-13",
+    "img": "/Images/24battlebot.png",
+    "urls": [
+      {
+        "displayText": "OnShape",
+        "url": "https://cad.onshape.com/documents/6403fa02ac086c170fbd5848/w/d91e60e6e3e1fa026ac96b9c/e/3cfb50852aa6d2020ada619e?renderMode=0&uiState=65367b3624e5ce05edde47b2"
+      }
+    ],
+    "display": true
+  },
+  {
+    "title": "2022-2023 Tech Design House",
+    "content": "Ideal starter house designed with a maximum 2500sq ft restriction. The design of this house maintains a set of defined colors and materials throughout appliances, furniture and building materials.",
+    "date": "2023-01-18",
+    "img": "/Images/house.png",
+    "urls": [
+      {
+        "displayText": "Full PDF",
+        "url": "https://drive.google.com/file/d/1gG-xrhUi0TOF__Ypgh2d96JAMIrp12KV/view?usp=share_link"
+      }
+    ],
+    "display": true
+  },
+  {
+    "title": "Automata",
+    "content": "A 3 cylinder, dual overhead cam engine model built for an automata project in Gr11 using OnShape. This model was built after completion in CAD, using a 3D printer, a laser cutter and a lot of hot glue.",
+    "date": "2022-10-27",
+    "img": "/Images/automata.png",
+    "urls": [
+      {
+        "displayText": "OnShape",
+        "url": ""
+      }
+    ],
+    "display": true
+  },
+  {
+    "title": "Caved",
+    "content": "A retro 2D terminal remake of the game Minecraft. Crafting, mining, sleeping, building, and killing mobs are all things possible in this game.",
+    "date": "2022-01-25",
+    "img": "/Images/caved.png",
+    "urls": [
+      {
+        "displayText": "Github",
+        "url": "https://github.com/zushiEdu/Caved"
+      }
+    ],
+    "display": true
+  },
+  {
+    "title": "2022-2023 Battle Bot",
+    "content": "Battle Bot for the HHSS 2022-2023 battle season. This bot uses a plastic spinner as its weapon, driven by an old weed wackers DC motor. The drive train is powered by 25GA-370 motors controlled through dual L288N drivers and an Arduino Uno receiving bluetooth contorl inputs. The components in this robot are air cooled by a 50mm computer fan.",
+    "date": "2023-06-26",
+    "img": "/Images/23battlebot.png",
+    "urls": [
+      {
+        "displayText": "OnShape",
+        "url": "https://cad.onshape.com/documents/544fbc1eaf97fb38b2cc1181/w/b038ccf2b9b97ac63344c1d3/e/d2ab5332e97499c1402bfaf2?renderMode=0&uiState=6537cbbdbafa29274aefedf9"
+      }
+    ],
+    "display": true
+  },
+  {
+    "title": "",
+    "content": "",
+    "date": "",
+    "img": "",
+    "urls": [
+      {
+        "displayText": "",
+        "url": ""
+      }
+    ],
+    "display": false
   },
   {
     "title": "Farmunation",
-    "content": "Farmunation is a 2D farming game that was inspired by my time on my grandparents farms. The project took inspiration from games such as Farming Simulator and John Deere's: Harvest in the Heartland. The idea around this game was to give the player complete freedom and near limitless space for them to grow and develop their farm. Both Farming Simulator and Harvest in the Hearthland limit your map in some way. This game is not finished and still has a lot to complete.",
+    "content": "Farmunation is a 2D farming game that was created because of my grandparents farms. The project took inspiration from games such as Farming Simulator and John Deere's: Harvest in the Heartland. The idea around this game was to give the player complete freedom and near limitless space for them to grow and develop their farm. Both Farming Simulator and Harvest in the Hearthland limit your map in some way. This game is not finished and still has a lot to complete.",
     "date": "2022-05-11",
-    "repoUrl": "https://github.com/zushiEdu/Farmunation",
-    "img": null
+    "img": "/Images/farmunation.png",
+    "urls": [
+      {
+        "displayText": "Github",
+        "url": "https://github.com/zushiEdu/Farmunation"
+      },
+      {
+        "displayText": "WebApp",
+        "url": "https://farmunation.netlify.app/"
+      }
+    ],
+    "display": true
   },
   {
     "title": "The Wonderful and Hodgepodged Reference Library",
     "content": "This website contains all of the links and references i've used in school projects starting from March 19th 2023. This website was created for fun after the shear amount of references I had to include in one of my projects. I had the thought that `maybe it would be funny to have a website I can reference for every school project that would include everything ive ever read/used. That way I would never have to create a reference list ever again. Plus if any person asks how I know the random facts I know, I can actually point them to somewhere. This website is purely for fun and was used as a website to improve my Javascript and CSS skills. All the links on this website are sorted alphabetically.",
     "date": "2023-03-19",
     "repoUrl": "https://github.com/zushiEdu/references",
-    "img": null
+    "img": null,
+    "devUrl": null,
+    "display": false
   }
 ]

@@ -1,3 +1,5 @@
+var projectCounter = 0;
+
 // JavaScript code to load projects dynamically
 fetch('projects.json')
     .then(response => response.json())
@@ -6,55 +8,65 @@ fetch('projects.json')
         projects = projects.sort(
             (p1, p2) => (p1.date < p2.date) ? 1 : (p1.date > p2.date) ? -1 : 0);
         projects.forEach(project => {
-            // Create a new section for each project
-            const section = document.createElement('section');
-            section.id = project.title.replaceAll(" ", "_");
+            if (project.display) {
+                projectCounter++;
+                const cell = document.createElement('td');
+                // Create a new section for each project
+                const section = document.createElement('section');
+                section.id = project.title.replaceAll(" ", "_");
 
-            const text = document.createElement('div');
-            text.id = "textContent";
+                if (project.img != null) {
+                    const image = document.createElement('img');
+                    image.src = project.img;
+                    section.appendChild(image);
+                }
 
-            if (project.img != null) {
-                const image = document.createElement('img');
-                image.src = project.img;
-                section.appendChild(image);
+                // Add project content to the section
+                const title = document.createElement('h2');
+                title.textContent = project.title;
+                cell.appendChild(title);
+
+                // Content
+                const content = document.createElement('p');
+                content.textContent = project.content;
+                section.appendChild(content);
+
+                // Date
+                const br = document.createElement('br');
+                br.style = "display: block; margin-bottom: -0.5rem;";
+                section.appendChild(br);
+                const date = document.createElement('p');
+                date.textContent = project.date;
+                date.style = 'display:inline';
+                section.appendChild(date);
+
+                const urls = project.urls;
+                for (var i = 0; i < urls.length; i++) {
+                    const seperator = document.createElement('a')
+                    seperator.textContent = " | ";
+                    const devpost = document.createElement('a');
+                    devpost.textContent = urls[i].displayText;
+                    devpost.href = urls[i].url;
+                    devpost.style = 'display:inline';
+                    devpost.target = '_blank';
+                    section.appendChild(seperator);
+                    section.appendChild(devpost);
+                }
+
+                cell.appendChild(section);
+
+                var row = Math.round(projectCounter / 2);
+                if (document.getElementById(row)) {
+                    tr = document.getElementById(row);
+                    projectsContainer.appendChild(tr);
+                    tr.appendChild(cell);
+                } else {
+                    const newRow = document.createElement('tr');
+                    newRow.id = Math.round(projectCounter / 2);
+                    newRow.appendChild(cell);
+                    projectsContainer.appendChild(newRow);
+                }
             }
-
-            // Add project content to the section
-            const title = document.createElement('h2');
-            title.textContent = project.title;
-            text.appendChild(title);
-
-            // Content
-            const content = document.createElement('p');
-            content.textContent = project.content;
-            content.style = 'margin-bottom:1rem';
-            text.appendChild(content);
-
-            // Information Div
-            const informationDiv = document.createElement('div');
-            informationDiv.style = 'margin-top:1rem, display:flex';
-            informationDiv.id = 'informationDiv';
-
-            // Date
-            const date = document.createElement('p');
-            date.textContent = project.date + " | ";
-            date.style = 'display:inline';
-            informationDiv.appendChild(date);
-
-            // Url
-            const link = document.createElement('a');
-            link.textContent = project.repoUrl;
-            link.href = project.repoUrl;
-            link.style = 'display:inline';
-            link.target = '_blank';
-            informationDiv.appendChild(link);
-
-            text.appendChild(informationDiv);
-
-            // Append the section to the container
-            section.appendChild(text);
-
-            projectsContainer.appendChild(section);
         });
     });
 
