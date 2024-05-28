@@ -123,5 +123,57 @@
     "img": null,
     "devUrl": null,
     "display": false
+  },
+  {
+    "title": "Picking Robot & Distribution Management Server (DistroSys)",
+    "content": "DistroSys is a system that involves a picking robot and a couple scripts which manage user purchases and robot dispatching. This project was made for my 12U Computer Science class. I use NodeJs for all of the backend software which communicates over WiFi to the ESP32 on the picking robot. The inspiration behind this project is from the time I spent working in a distribution centre. I've always seen opportunities where automation could take place for safety and efficiency which is why I started working on a solution of my own.",
+    "date": "2024-05-28",
+    "img": "/Images/pickingRobot.png",
+    "urls": [
+      {
+        "displayText": "Github",
+        "url": "https://github.com/zushiEdu/distroSys"
+      }
+    ],
+    "display": true
+  },
+  {
+    "title": "Indoor/Outdoor 2 Floor Go Kart Facility",
+    "content": "This facility was made in my Grade 12 tech design class using Revit. The facility contains a two story, indoor and outdoor track with multiple configurations. It features a second floor viewing loft, a machine shop for maintenence and a lobby. For floor plans and more 3d views/information, check out the PFD.",
+    "date": "2024-05-28",
+    "img": "/Images/goKartTrack.png",
+    "urls": [
+      {
+        "displayText": "PDF",
+        "url": "https://drive.google.com/file/d/1sUmH5NT5s2S_HT_ar92Id2AFVNsVzVOM/view?usp=sharing"
+      }
+    ],
+    "display": true
+  },
+  {
+    "title": "Urban Shelter",
+    "content": "An urban shelter made in my Grade 12 tech design class using Onshape. Features an eco-friendly water recovery system and a minimalist water fountain.",
+    "date": "2024-05-27",
+    "img": "/Images/urbanShelter.png",
+    "urls": [
+      {
+        "displayText": "OnShape",
+        "url": "https://cad.onshape.com/documents/a54b6e0f62a3824814911c99/w/596cb1a10a93d8a0eebd478b/e/336c2f53ee64dad772964e8c?renderMode=0&uiState=6655fbb112bf0b675b2efcb3"
+      }
+    ],
+    "display": true
+  },
+  {
+    "title": "Fire Fighting Maze Robot",
+    "content": "Made for my Grade 12 computer tech class using OnShape. Features a pair of ultrasonic sensors, an infrared sensor and a temperature sensor. All the sensors communicate to the Arduino which controls the wheels and pump using a L298N motor driver.",
+    "date": "2024-05-29",
+    "img": "/Images/fireBot.png",
+    "urls": [
+      {
+        "displayText": "OnShape",
+        "url": "https://cad.onshape.com/documents/be6a19b6cd8156f4d2462fe2/w/89b98f1e40a23d46c809e031/e/88d7c1ddbc091d987d4ed6c4?renderMode=0&uiState=6655fc63c9cafb19d42d6be7"
+      }
+    ],
+    "display": true
   }
 ]
