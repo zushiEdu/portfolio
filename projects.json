@@ -23,7 +23,7 @@
   {
     "title": "2023-2024 Battle Bot",
     "content": "Battle Bot for the HHSS 2023-2024 battle season. This bot uses a 4 1/2inch blade as its primary weapon, driven by a D2822 brushless motor. The drive train is powered by 25GA-370 motors controlled through dual L288N drivers and an Arduino Uno receiving bluetooth contorl inputs. The components in this robot are air cooled by a 50mm computer fan.",
-    "date": "2023-09-13",
+    "date": "2024-05-13",
     "img": "/Images/24battlebot.png",
     "urls": [
       {
@@ -86,19 +86,6 @@
     "display": true
   },
   {
-    "title": "",
-    "content": "",
-    "date": "",
-    "img": "",
-    "urls": [
-      {
-        "displayText": "",
-        "url": ""
-      }
-    ],
-    "display": false
-  },
-  {
     "title": "Farmunation",
     "content": "Farmunation is a 2D farming game that was created because of my grandparents farms. The project took inspiration from games such as Farming Simulator and John Deere's: Harvest in the Heartland. The idea around this game was to give the player complete freedom and near limitless space for them to grow and develop their farm. Both Farming Simulator and Harvest in the Hearthland limit your map in some way. This game is not finished and still has a lot to complete.",
     "date": "2022-05-11",
@@ -127,7 +114,7 @@
   {
     "title": "Picking Robot & Distribution Management Server (DistroSys)",
     "content": "DistroSys is a system that involves a picking robot and a couple scripts which manage user purchases and robot dispatching. This project was made for my 12U Computer Science class. I use NodeJs for all of the backend software which communicates over WiFi to the ESP32 on the picking robot. The inspiration behind this project is from the time I spent working in a distribution centre. I've always seen opportunities where automation could take place for safety and efficiency which is why I started working on a solution of my own.",
-    "date": "2024-05-28",
+    "date": "2023-12-29",
     "img": "/Images/pickingRobot.png",
     "urls": [
       {
@@ -140,7 +127,7 @@
   {
     "title": "Indoor/Outdoor 2 Floor Go Kart Facility",
     "content": "This facility was made in my Grade 12 tech design class using Revit. The facility contains a two story, indoor and outdoor track with multiple configurations. It features a second floor viewing loft, a machine shop for maintenence and a lobby. For floor plans and more 3d views/information, check out the PFD.",
-    "date": "2024-05-28",
+    "date": "2024-04-28",
     "img": "/Images/goKartTrack.png",
     "urls": [
       {
@@ -153,7 +140,7 @@
   {
     "title": "Urban Shelter",
     "content": "An urban shelter made in my Grade 12 tech design class using Onshape. Features an eco-friendly water recovery system and a minimalist water fountain.",
-    "date": "2024-05-27",
+    "date": "2024-03-27",
     "img": "/Images/urbanShelter.png",
     "urls": [
       {
@@ -172,6 +159,19 @@
       {
         "displayText": "OnShape",
         "url": "https://cad.onshape.com/documents/be6a19b6cd8156f4d2462fe2/w/89b98f1e40a23d46c809e031/e/88d7c1ddbc091d987d4ed6c4?renderMode=0&uiState=6655fc63c9cafb19d42d6be7"
+      }
+    ],
+    "display": true
+  },
+  {
+    "title": "Dream House",
+    "content": "Made for my Grade 12 tech design class using Revit. Features many places to put car, up to 14 people can comfortably sleep in this home. Contains unique features such as an infinity pool, gym, theatre and wine cellar.",
+    "date": "2024-05-29",
+    "img": "/Images/dreamHouseThumb.png",
+    "urls": [
+      {
+        "displayText": "PDF",
+        "url": "https://drive.google.com/file/d/1YbHRbfNrMHDQimhHVAA0tkMaXc_kLmqk/view?usp=sharing"
       }
     ],
     "display": true

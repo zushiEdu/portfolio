@@ -33,7 +33,7 @@ fetch('projects.json')
 
                 // Date
                 const br = document.createElement('br');
-                br.style = "display: block; margin-bottom: -0.5rem;";
+                br.style = "display: block; margin-bottom: 0.5rem;";
                 section.appendChild(br);
                 const date = document.createElement('p');
                 date.textContent = project.date;
