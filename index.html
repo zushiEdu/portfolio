@@ -1,53 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>zushiEdu</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethan Huber</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="/Images/icon.png" />
   </head>
-
   <body>
-    <div>
-      <h1>Ethan Huber</h1>
-      <p>
-        Welcome to my portfolio! <br />
-        I am a high school student that enjoys to create various websites,
-        games, circuits and robots. I commonly program in Java, Javascript, C#,
-        Python and other C based languages. I also use OnShape and Revit to
-        create all of my design projects.<br /><br />
-        The project I am working on the most currently is the
-        <a
-          target="_blank"
-          href="https://cad.onshape.com/documents/6403fa02ac086c170fbd5848/w/d91e60e6e3e1fa026ac96b9c/e/3cfb50852aa6d2020ada619e?renderMode=0&uiState=65367b3624e5ce05edde47b2"
-          >2023-2024 Battle Bot.</a
-        >
-      </p>
+    <div id="mainContent" class="frosted">
+      <div class="nav">
+        <h1>Ethan Huber</h1>
+        <hr class="solid" />
+        <p class="bold">Navigation</p>
+        <ul>
+          <li class="italic"><a href="#projects">Projects</a></li>
+          <li class="italic"><a href="#photography">Photography</a></li>
+          <li class="italic"><a href="#awards">Awards</a></li>
+          <li><br /></li>
+          <li class="italic"><a href="#about-me">About Me</a></li>
+          <li class="italic">
+            <a href="/Documents/resume.pdf" target="_blank">Resume</a>
+          </li>
+          <li><br /></li>
+
+          <ul>
+            <li class="inline">
+              <img class="singleHeight" src="/Branding/github.svg" />
+            </li>
+            <li class="inline leftPad">
+              <img class="singleHeight" src="/Branding/instagram.svg" />
+            </li>
+            <li class="inline leftPad">
+              <img class="singleHeight" src="/Branding/email.svg" />
+            </li>
+            <li class="inline leftPad">
+              <img class="singleHeight" src="/Branding/linkedin.png" />
+            </li>
+          </ul>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="page" id="projects">
+          <p>Projects</p>
+        </div>
+        <div class="page" id="photography">Content of photography</div>
+        <div class="page" id="awards">Content of awards</div>
+        <div class="page" id="about-me">Content of about me</div>
+      </div>
     </div>
 
-    <table id="projects-container"></table>
-
-    <div
-      class="content"
-      id="bonus-content"
-      style="
-        position: fixed;
-        z-index: 1;
-        left: 50%;
-        bottom: 0%;
-        transform: translate(-50%);
-      "
-    ></div>
-
-    <footer>
-      <ul>
-        <a href="https://github.com/zushiEdu" target="_blank">Github</a>
-        <a href="https://devpost.com/zushiEdu" target="_blank">DevPost</a>
-        <a href="https://www.instagram.com/ethan_huber_/" target="_blank"
-          >Instagram</a
-        >
-        <a href="mailto:ehuber@zushiedu.com" target="_blank">Email</a>
-      </ul>
-    </footer>
     <script src="script.js"></script>
   </body>
 </html>
