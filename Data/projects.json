@@ -69,7 +69,7 @@
   },
   {
     "title": "Automata",
-    "tldr": "Inline 3 model engine",
+    "tldr": "Inline 3 model engine.",
     "date": "2022-10-27",
     "thumb": "/Thumbnails/autom.png",
     "header": "",
@@ -84,7 +84,7 @@
   },
   {
     "title": "Caved",
-    "tldr": "2D Remake of Minecraft",
+    "tldr": "2D Remake of Minecraft.",
     "date": "2022-01-25",
     "thumb": "/Thumbnails/caved.png",
     "header": "",
@@ -114,7 +114,7 @@
   },
   {
     "title": "Farmunation",
-    "tldr": "Build for the 2022-2023 HHSS battle bots season.",
+    "tldr": "2D, Javascript, Farming Game.",
     "date": "2022-05-11",
     "thumb": "/Thumbnails/farm.png",
     "header": "",
@@ -133,7 +133,7 @@
   },
   {
     "title": "The Wonderful and Hodgepodged Reference Library",
-    "tldr": "An unserious website that contains a random selection of random links that I've visited at some point",
+    "tldr": "An unserious website that contains a random selection of random links that I've visited at some point.",
     "date": "2023-03-19",
     "thumb": "/Thumbnails/hodge.png",
     "header": "",
@@ -148,7 +148,7 @@
   },
   {
     "title": "DistroSys",
-    "tldr": "Kinda a Copy of Amazon",
+    "tldr": "Kinda a Copy of Amazon.",
     "header": "",
     "paragraph": "DistroSys is a system that involves a picking robot and a couple scripts which manage user purchases and robot dispatching. This project was made for my 12U Computer Science class. I used NodeJs for all of the backend software which communicates over WiFi to the ESP32 on the picking robot. The inspiration behind this project is from the time I spent working in a distribution centre. I've always seen opportunities where automation could take place for safety and efficiency which is why I started working on a solution of my own.",
     "date": "2023-12-29",
@@ -162,7 +162,7 @@
     "display": true
   },
   {
-    "title": "Indoor/Outdoor 2 Floor Go Kart Facility",
+    "title": "Indoor/Outdoor 2 Floor Go Kart Facility.",
     "tldr": "",
     "header": "",
     "paragraph": "This facility was made in my Grade 12 tech design class using Revit. The facility contains a two story, indoor and outdoor track with multiple configurations. It features a second floor viewing loft, a machine shop for maintenence and a lobby. For floor plans and more 3d views/information, check out the PFD.",
@@ -178,7 +178,7 @@
   },
   {
     "title": "Urban Shelter",
-    "tldr": "",
+    "tldr": "Modern urban shelter made in Grade 12 Tech Design.",
     "header": "",
     "paragraph": "An urban shelter made in my Grade 12 tech design class using Onshape. Features an eco-friendly water recovery system and a minimalist water fountain.",
     "date": "2024-03-27",
@@ -208,7 +208,7 @@
   },
   {
     "title": "Dream House",
-    "tldr": "",
+    "tldr": "Dream house designed in Grade 12 Tech Design.",
     "header": "",
     "paragraph": "Made for my Grade 12 tech design class using Revit. Features many places to put a car, up to 14 people can comfortably sleep in this home. Contains unique features such as an infinity pool, gym, theatre and wine cellar.",
     "date": "2024-05-29",

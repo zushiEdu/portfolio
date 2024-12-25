@@ -161,7 +161,35 @@ section:hover ul{
     display: block;
 }
 
+#projects h3{
+    text-align: center;
+}
+
+#photography h3{
+    text-align: center;
+}
+
+#awards h3{
+    text-align: center;
+}
+
+#about-me h3{
+    text-align: center;
+}
+
 #projects p{
+    text-align: center;
+}
+
+#photography p{
+    text-align: center;
+}
+
+#awards p{
+    text-align: center;
+}
+
+#about-me p{
     text-align: center;
 }
 
@@ -174,4 +202,46 @@ section:hover ul{
 #projectsNav{
     display: flex;
     justify-content: center;
+}
+
+#photography table tr td img {
+    width: 100%;
+}
+
+.projectPagesNavText:hover{
+    cursor: pointer;
+}
+
+#photoCol1{
+    vertical-align: top;
+    padding:0;
+    padding-right: 0.5em;
+}
+
+#photoCol2{
+    vertical-align: top;
+    padding:0;
+}
+
+#photoCol1 img{
+    padding-bottom: 0.5em;
+}
+
+#photoCol2 img{
+    padding-bottom: 0.5em;
+}
+
+#awards ul li{
+    list-style-type:disc;
+    margin-left: 1em;
+}
+
+#awards ul li p{
+    margin:0.25em;
+    text-align: left;
+}
+
+#about-me p{
+text-align: left;
+line-height: 1.5em;
 }
