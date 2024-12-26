@@ -23,10 +23,10 @@ fetch('/Data/photos.json')
             let img = document.createElement('img');
             img.src = image.url;
             if (photosContainer1Height >= photosContainer2Height) {
-                photosContainer2Height += img.height;
+                photosContainer2Height += 1;
                 photosContainer2.appendChild(img);
             } else {
-                photosContainer1Height += img.height;
+                photosContainer1Height += 1;
                 photosContainer1.appendChild(img);
             }
         })

@@ -245,3 +245,58 @@ section:hover ul{
 text-align: left;
 line-height: 1.5em;
 }
+
+#rights{
+    text-align: left;
+}
+
+@media only screen and (max-width:1024px){
+    #mainContent {
+        width: 100%;
+        padding: 0;
+        display: block;
+    }
+
+    .frosted{
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        mask: none;
+    }
+
+    .nav{
+        margin: auto;
+        width: 80%;
+    }
+
+    .content{
+        margin:auto;
+        width: 80%;
+        padding-top: 0;
+    }
+
+    #projectsNav li a{
+        font-size: 1.5em;
+    }
+
+    .miniTitle {
+        font-size:1em;
+        line-height: 1em;
+    }
+
+    #projects tr section ul{
+        width: 90%;
+        top:35%;
+    }
+
+    .nav ul li a{
+        font-size: 1.25em;
+    }
+
+    .nav p{
+        font-size: 1.5em;
+    }
+
+    #rights{
+        font-size:1em;
+    }
+}
