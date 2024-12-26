@@ -1,7 +1,7 @@
 [
   {
     "title": "V10 Pneumatic Engine",
-    "tldr": "A 3D printed model V10 engine that runs off of compressed air.",
+    "tldr": "A model V10 engine that runs off of compressed air.",
     "date": "2024-09-20",
     "thumb": "/Thumbnails/v10-engine.png",
     "header": "/Headers/v10Header.png",
@@ -132,7 +132,7 @@
     "display": true
   },
   {
-    "title": "The Wonderful and Hodgepodged Reference Library",
+    "title": "The Reference Library",
     "tldr": "Personal disorganized reference library.",
     "date": "2023-03-19",
     "thumb": "/Thumbnails/hodge.png",

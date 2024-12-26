@@ -95,18 +95,9 @@ section:hover ul{
     opacity: 1;
 }
 
-.singleHeight{
-    max-height: 1.5em;
-}
-
 .leftPad{
     margin-left: 0.5em;
 }
-
-.inline{
-    display: inline;
-}
-
 .frosted{
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
@@ -250,6 +241,21 @@ line-height: 1.5em;
     text-align: left;
 }
 
+.iconList{
+    display: flex;
+}
+
+.iconListItem{
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.iconListItem img{
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1;
+}
+
 @media only screen and (max-width:1024px){
     #mainContent {
         width: 100%;
@@ -266,6 +272,8 @@ line-height: 1.5em;
     .nav{
         margin: auto;
         width: 80%;
+        padding-bottom: 0;
+        padding-top: 0;
     }
 
     .content{
@@ -281,6 +289,7 @@ line-height: 1.5em;
     .miniTitle {
         font-size:1em;
         line-height: 1em;
+        margin: 0;
     }
 
     #projects tr section ul{
@@ -298,5 +307,13 @@ line-height: 1.5em;
 
     #rights{
         font-size:1em;
+    }
+
+    .leftPad{
+        padding-left: 1em;
+    }
+ 
+    .tldr{
+        margin-top:0.5em;
     }
 }
