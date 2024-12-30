@@ -5,7 +5,7 @@
     "date": "2024-09-20",
     "thumb": "/Thumbnails/v10-engine.png",
     "header": "/Headers/v10Header.png",
-    "paragraph": "Since my inline 3 engine model project I wanted to design a new model engine that could run under some sort of energ other than a hand crank. I was unsure what energy to base my new engine model off of until I saw a video by PolyProject3D on YouTube. He has made a collection of 3D printed engines that all run off of compressed air. The specific engine that peaked my interest is the V8 model engine he made. \n\n The reason why his V8 model engine intrigued me the most was because of the intricate intake and exhause manifolds he designed. The manifolds and the performance of the engine lead me to be reminded of the Lexus LFA due to its high revving nature and unique sound characteristic. Due to this I decided I would design my own version of the engine PolyProject3D made but in V10 form in inspiration from the LFA. I figured it would be the perfect project to learn how to manufacture more detailed and stress-enduring part using SLM printing. \n\n This project is quickly growing in scope as I think this engine could be paired to an entire system of 3D printed drivetrain components to form an entire functioning(ish) model car. So far I have the engine mated to a transmission and a differential.",
+    "paragraph": "Since my inline 3 engine model project I wanted to design a new model engine that could run under some sort of energ other than a hand crank. I was unsure what energy to base my new engine model off of until I saw a video by PolyProject3D on YouTube. He has made a collection of 3D printed engines that all run off of compressed air. The specific engine that peaked my interest is the V8 model engine he made. \n\n The reason why his V8 model engine intrigued me the most was because of the intricate intake and exhause manifolds he designed. The manifolds and the performance of the engine lead me to be reminded of the Lexus LFA due to its high revving nature and unique sound characteristic. Due to this I decided I would design my own version of the engine PolyProject3D made but in V10 form in inspiration from the LFA. I figured it would be the perfect project to learn how to manufacture more detailed and stress-enduring part using SLM printing. \n\n This project is quickly growing in scope as this engine is now be paired to an entire system of 3D printed drivetrain components to form an entire functioning(ish) model car. So far I have the engine mated to a transmission and a differential with the frame sitting on all around double-wishbone suspension.",
     "links": [
       {
         "displayText": "OnShape",
@@ -19,8 +19,8 @@
     "tldr": "Build for the 2023-2024 HHSS battle bots season.",
     "date": "2024-05-13",
     "thumb": "/Thumbnails/24battle-bot.png",
-    "header": "",
-    "paragraph": "The battle bot I built for the 2024 season was designed off of a year of experience where I learnt everything from where to buy affordable fasteners to how to best design a frame to resist attack. The robot for the 2024 season was completely redesigned from the ground up to prioritize frame rigidity, value, and fairness first. I decided to consider value and fairness as integral aspects because I could transfer what I thought was fair into the parts I was tasked with buying for the 2024 season. I needed to make sure that the parts I decided to buy were easy to learn with, effective in battle bots, but also effective for other activies (i.e. drones). I also needed to ensure that the teams could fairly compete no matter what skill level and budget at hand. \n\nThe reason why this specifically spoke to me is because I felt that the 2023 season was unfair due to the wide range of budget, team sizes, and robot sizes. There were no standards in the 2023 season and due to that there were problems with some teams winning due to non-skill based factors. There was also no defined scoring system which meant teams were blindly going into the competition not knowing how a winner would be decided. These were all issues that were remedied in the 2024 season. I supplied fasteners to whomever needed them, often helped mentoring with the design of other robots, 3D printing parts for other people when I could, designed rules to consider all aspects of battle (as to deter boring metas from forming), and I generally helped teams troubleshoot their bots. I felt I had a lot more fun in the 2024 season and I hope a lot of other people did too as that is how I would measure my success. \n\n My battle bot had the following specs:\n- 4 1/2\" saw blade\n- Drone motor driven by a D2822 ESC (weapon)\n- Dual 25GA-370 drive motors driven by an L298N\n- Arduino Uno\n- Bluetooth receiver (smartphone control)\n- 50mm computer fan for cooling",
+    "header": "/Headers/24btlbotHeader.png",
+    "paragraph": "The battle bot I built for the 2024 season was designed off of a year of experience where I learnt everything from where to buy affordable fasteners to how to best design a frame to resist attack. The robot for the 2024 season was completely redesigned from the ground up to prioritize frame rigidity, value, and fairness first. I decided to consider value and fairness as integral aspects because I could transfer what I thought was fair into the parts I was tasked with buying for the 2024 season. I needed to make sure that the parts I decided to buy were easy to learn with, effective in battle bots, but also effective for other activies (i.e. drones). I also needed to ensure that the teams could fairly compete no matter what skill level and budget at hand. \n\nThe reason why this specifically spoke to me is because I felt that the 2023 season was unfair due to the wide range of budget, team sizes, and robot sizes. There were no standards in the 2023 season. There was also no defined scoring system which meant teams were blindly going into the competition not knowing how a winner would be decided. These were all issues that were remedied in the 2024 season. I supplied fasteners to whomever needed them, 3D printing parts for other people when I could, designed rules to consider all aspects of battle (as to deter boring metas from forming), and I generally helped/mentored around 10 teams with their bots. I felt I had a lot more fun in the 2024 season and I hope a lot of other people did too as that is how I would measure my success. \n\n My battle bot had the following specs:\n- 4 1/2\" saw blade\n- Drone motor driven by a D2822 ESC (weapon)\n- Dual 25GA-370 drive motors driven by an L298N\n- Arduino Uno\n- Bluetooth receiver (smartphone control)\n- 50mm computer fan for cooling\n- 4 18650 Lithium-Ion batteries",
     "links": [
       {
         "displayText": "OnShape",
@@ -34,7 +34,7 @@
     "tldr": "Web app to create perf-board representations.",
     "date": "2023-04-03",
     "thumb": "/Thumbnails/clc.png",
-    "header": "",
+    "header": "/Headers/circuitHeader.png",
     "paragraph": "Circuit Layout Creator or CLC is an open source, circuit layout creation website. This project was inspired by DIYLC, with the main difference being that this web-app is compatable on all devices as long as they have a web broswer and a physical keyboard. As this project is currently being supported by a small group of people and developed by a single developer, lots of features are being worked on. As it stands a basic circuit can be created from start to finish. The biggest change that needs to be made is an improvement to the current control scheme. Everything in this app is done through they keyboard which is the biggest suggested category of change given by the alpha-testers. The control system in the future will be able to integrate the mouse to click and drag components around.\n\nThe entire web-app is programmed in Javascript utilizing easy to read JSON files and custom component files to draw the components on the canvas.",
     "links": [
       {
@@ -57,7 +57,7 @@
     "tldr": "Starter home designed in Gr11 Tech Design.",
     "date": "2023-01-18",
     "thumb": "/Thumbnails/strHouse.png",
-    "header": "",
+    "header": "/Headers/househeader.png",
     "paragraph": "Average starter house designed with a maximum 2500sq ft restriction. The design of this house maintains a set of defined colors and materials throughout appliances, furniture and building materials. This house was designed in Gr11 tech design using Revit.",
     "links": [
       {
@@ -72,7 +72,7 @@
     "tldr": "Inline 3 model engine.",
     "date": "2022-10-27",
     "thumb": "/Thumbnails/autom.png",
-    "header": "",
+    "header": "/Headers/automataheader.jpg",
     "paragraph": "A 3 cylinder, dual overhead cam engine model built for an automata project in Gr11 using OnShape. This model was manufactured using a 3D printer, a laser cutter, and a lot of hot glue. This model operates with a hand-crank.",
     "links": [
       {
@@ -87,8 +87,8 @@
     "tldr": "2D Remake of Minecraft.",
     "date": "2022-01-25",
     "thumb": "/Thumbnails/caved.png",
-    "header": "",
-    "paragraph": "A retro 2D terminal remake of the game Minecraft. Crafting, mining, sleeping, building, saving/loading maps, and killing mobs are all things possible in this game.",
+    "header": "/Headers/cavedheader.png",
+    "paragraph": "A retro 2D terminal remake of the game Minecraft made in Java. Crafting, mining, sleeping, building, saving/loading maps, and killing mobs are all things possible in this game.\n\n The map is procedurally generated and the enemies are driven by a basic AI algorithm.",
     "links": [
       {
         "displayText": "Github",
@@ -102,7 +102,7 @@
     "tldr": "Build for the 2022-2023 HHSS battle bots season.",
     "date": "2023-06-26",
     "thumb": "/Thumbnails/23battle-bot.png",
-    "header": "",
+    "header": "/Headers/23btlbotHeader.png",
     "paragraph": "Battle Bot for the HHSS 2022-2023 battle season. This bot uses a plastic spinner as its weapon, driven by an old weed wackers DC motor. The drive train is powered by 25GA-370 motors controlled through dual L288N drivers and an Arduino Uno receiving bluetooth contorl inputs. The components in this robot are air cooled by a 50mm computer fan.",
     "links": [
       {
@@ -117,8 +117,8 @@
     "tldr": "2D, Javascript, Farming Game.",
     "date": "2022-05-11",
     "thumb": "/Thumbnails/farm.png",
-    "header": "",
-    "paragraph": "Farmunation is a 2D farming game that was created because of my grandparents farm. The project took inspiration from games such as Farming Simulator and John Deere's: Harvest in the Heartland. The idea around this game was to give the player complete freedom and near limitless space for them to grow and develop their farm. Both Farming Simulator and Harvest in the Hearthland limit your map in some way. This game is not finished and still has a lot to do.",
+    "header": "/Headers/farmunationheader.jpg",
+    "paragraph": "Farmunation is a 2D farming game that was created because of my grandparents farm. The project took inspiration from games such as Farming Simulator and John Deere's: Harvest in the Heartland. The idea around this game was to give the player complete freedom and near limitless space for them to grow and develop their farm. Both Farming Simulator and Harvest in the Hearthland limit your map in some way. This game is not finished and still has a lot to complete.",
     "links": [
       {
         "displayText": "Github",
@@ -136,12 +136,12 @@
     "tldr": "Personal disorganized reference library.",
     "date": "2023-03-19",
     "thumb": "/Thumbnails/hodge.png",
-    "header": "",
-    "paragraph": "This website contains all of the links and references i've used in school projects starting from March 19th 2023. This website was created for fun after the shear amount of references I had to include in one of my projects. I had the thought that `maybe it would be funny to have a website I can reference for every school project that would include everything ive ever read/used. That way I would never have to create a reference list ever again. Plus if any person asks how I know the random facts I know, I can actually point them to somewhere. This website is purely for fun and was used as a website to improve my Javascript and CSS skills. All the links on this website are sorted alphabetically.",
+    "header": "/Headers/hodgeheader.png",
+    "paragraph": "This website contains most of the links and references I've used in school projects starting from March 19th 2023. This website was created for fun after the shear amount of references I had to include in one of my projects. I had the thought that maybe it would be funny to have a website I can reference for every school project that would include everything I have ever read/used. That way I would never have to create a reference list ever again. Plus if any person asks how I know the random facts I know, I can actually point them to somewhere. This website is purely for fun and was used as a website to improve my Javascript and CSS skills. All the links on this website are sorted alphabetically and can be simplified.",
     "links": [
       {
         "displayText": "WebApp",
-        "url": "https://cad.onshape.com/documents/53da988791f59355cf7d8db7/w/781ae9665a3aab0ba98f85d1/e/cfb4efc1f7ba104ccf16797a?renderMode=0&uiState=6761c096e7632109579b4162"
+        "url": "https://zushiedu.github.io/references/"
       }
     ],
     "display": true
@@ -149,8 +149,8 @@
   {
     "title": "DistroSys",
     "tldr": "Kinda a Copy of Amazon.",
-    "header": "",
-    "paragraph": "DistroSys is a system that involves a picking robot and a couple scripts which manage user purchases and robot dispatching. This project was made for my 12U Computer Science class. I used NodeJs for all of the backend software which communicates over WiFi to the ESP32 on the picking robot. The inspiration behind this project is from the time I spent working in a distribution centre. I've always seen opportunities where automation could take place for safety and efficiency which is why I started working on a solution of my own.",
+    "header": "/Headers/distroHeader.png",
+    "paragraph": "DistroSys is a project that involves a picking robot and server-run software which manage user purchases and robot dispatching. This project was made for my 12U Computer Science class. I used NodeJs for all of the backend software which communicates over WiFi to the ESP32 on the picking robot. The inspiration behind this project is the distribution centre I used to work at. I've always seen opportunities where automation could take place of a human role for safety and efficiency which is why I wanted to develop a solution of my own.",
     "date": "2023-12-29",
     "thumb": "/Thumbnails/distro.png",
     "links": [
@@ -163,8 +163,8 @@
   },
   {
     "title": "Indoor/Outdoor 2 Floor Go Kart Facility.",
-    "tldr": "",
-    "header": "",
+    "tldr": "Warehouse converted to go kart track.",
+    "header": "/Headers/kartHeader.png",
     "paragraph": "This facility was made in my Grade 12 tech design class using Revit. The facility contains a two story, indoor and outdoor track with multiple configurations. It features a second floor viewing loft, a machine shop for maintenence and a lobby. For floor plans and more 3d views/information, check out the PFD.",
     "date": "2024-04-28",
     "thumb": "/Thumbnails/kart.png",
@@ -179,8 +179,8 @@
   {
     "title": "Urban Shelter",
     "tldr": "Modern urban shelter made in Grade 12 Tech Design.",
-    "header": "",
-    "paragraph": "An urban shelter made in my Grade 12 tech design class using Onshape. Features an eco-friendly water recovery system and a minimalist water fountain.",
+    "header": "/Headers/shelterHeader.png",
+    "paragraph": "An urban shelter made in my Grade 12 tech design class using Onshape. Features an eco-friendly water recovery system and a minimalist, pet-friendly water fountain. It's key design feature is the back wall with a grating to allow for natural light to pass through but still block wind. \n\nThe roof lofts from an arch into a ripple shape in the back to both direct water naturally and look pleasing.",
     "date": "2024-03-27",
     "thumb": "/Thumbnails/shelter.png",
     "links": [
@@ -194,8 +194,8 @@
   {
     "title": "Fire Fighting Maze Robot",
     "tldr": "Autonomous fire fighting robot.",
-    "header": "",
-    "paragraph": "Made for my Grade 12 computer tech class using OnShape. Features a pair of ultrasonic sensors, an infrared sensor and a temperature sensor. All the sensors communicate to the Arduino which controls the wheels and pump using a L298N motor driver. I also built the maze that our class used for this project as tasked by my teacher.",
+    "header": "/Headers/mazerbt.png",
+    "paragraph": "Made for my Grade 12 computer tech class using OnShape. Features a pair of ultrasonic sensors, an infrared sensor and a temperature sensor. All the sensors communicate to the Arduino which controls the wheels and pump using a L298N motor driver. I also built the maze that our class used for this project as tasked by my teacher. \n\n Additionally I learnt how to make an enclosure for the robot which both serves structural and aesthetic purposes which taught me how to better account for tolerences when 3D printing.",
     "date": "2024-05-29",
     "thumb": "/Thumbnails/fireBot.png",
     "links": [
@@ -209,14 +209,104 @@
   {
     "title": "Dream House",
     "tldr": "Dream house designed in Grade 12 Tech Design.",
-    "header": "",
-    "paragraph": "Made for my Grade 12 tech design class using Revit. Features many places to put a car, up to 14 people can comfortably sleep in this home. Contains unique features such as an infinity pool, gym, theatre and wine cellar.",
+    "header": "/Headers/drmHouseHeader2.png",
+    "paragraph": "Made for my Grade 12 tech design class using Revit. Features many places to put a car including a car lift. Up to 14 people can comfortably sleep in this home, this includes a guest suite above the garage. Contains unique features such as an infinity pool, gym, theatre, converstaion pit and a wine cellar.",
     "date": "2024-05-29",
     "thumb": "/Thumbnails/drmHouse.png",
     "links": [
       {
         "displayText": "PDF",
         "url": "https://drive.google.com/file/d/1YbHRbfNrMHDQimhHVAA0tkMaXc_kLmqk/view?usp=sharing"
+      }
+    ],
+    "display": true
+  },
+  {
+    "title": "Food Inc",
+    "tldr": "Android clicker game.",
+    "header": "/Headers/foodheader.png",
+    "paragraph": "I made this game for fun using the Unity game engine. I published this game on the Google Play Store on which it obtained many downloads. This was my first large-scale project supporting many operating systems and was updated to add more content numerous times.",
+    "date": "2021-01-17",
+    "thumb": "/Thumbnails/food.png",
+    "links": [
+      {
+        "displayText": "Itch.io",
+        "url": "https://zushidev.itch.io/food-inc"
+      }
+    ],
+    "display": true
+  },
+  {
+    "title": "Zushi Online Games",
+    "tldr": "CoolMathGames copy.",
+    "header": "/Headers/onlineheader.png",
+    "paragraph": "I started developing this website in grade 7 and continued development throughout grade 8. I wanted to be able to share and show my games to my friends so I compiled all my Unity games to run in the web and uploaded it to the website. This website was my first exposure to developing and hosting websites.",
+    "date": "2019-02-13",
+    "thumb": "/Thumbnails/online.png",
+    "links": [
+      {
+        "displayText": "Website",
+        "url": "https://zushidev.github.io/index.html"
+      }
+    ],
+    "display": true
+  },
+  {
+    "title": "ecoConnect",
+    "tldr": "Tool to find local produce.",
+    "header": "/Headers/ecoheader.png",
+    "paragraph": "I made this tool for the 2023 Spring Hacks Hackathon. This tool uses your location to show a sorted list of curated local produce stores.",
+    "date": "2023-05-20",
+    "thumb": "/Thumbnails/eco.png",
+    "links": [
+      {
+        "displayText": "Website",
+        "url": "https://ecoconnect.netlify.app/"
+      }
+    ],
+    "display": true
+  },
+  {
+    "title": "Basalt",
+    "tldr": "Javascript port of Caved.",
+    "header": "/Headers/basaltheader.png",
+    "paragraph": "Web conversion of Caved. I built this so I could play my game online and learn more Javascript.",
+    "date": "2022-05-11",
+    "thumb": "/Thumbnails/basalt.png",
+    "links": [
+      {
+        "displayText": "Website",
+        "url": "https://zushiedu.github.io/Basalt/"
+      }
+    ],
+    "display": true
+  },
+  {
+    "title": "Rocketeer",
+    "tldr": "Simple arcade rocket sim.",
+    "header": "/Headers/rocketheader.png",
+    "paragraph": "2D simple rocket flying simulator. The goal of the game is to balance your rocket between the green lines. I created this game to learn the basics of 2D Java graphics and to learn how to implement basic physics.",
+    "date": "2022-02-22",
+    "thumb": "/Thumbnails/rocket.png",
+    "links": [
+      {
+        "displayText": "Github",
+        "url": "https://github.com/zushiEdu/Rocketeer"
+      }
+    ],
+    "display": true
+  },
+  {
+    "title": "Calculator",
+    "tldr": "Desmos clone.",
+    "header": "/Headers/calcheader.png",
+    "paragraph": "A limited graphing calculator. The syntax recognition of this program is very picky and sensitive. This tool can draw polygons, and polynomials. I made this because I was curious how a graphing calculator drew math functions. I did not develop this tool very long as I quickly answered the question that inspired this project and got tired of programming functions to correctly interpret multiple styles of math syntax.",
+    "date": "2023-02-3",
+    "thumb": "/Thumbnails/calc.png",
+    "links": [
+      {
+        "displayText": "Github",
+        "url": "https://github.com/zushiEdu/Calculator"
       }
     ],
     "display": true
