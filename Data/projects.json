@@ -3,8 +3,8 @@
     "title": "V10 Pneumatic Engine",
     "tldr": "A model V10 engine that runs off of compressed air.",
     "date": "2024-09-20",
-    "thumb": "/Thumbnails/v10-engine.png",
-    "header": "/Headers/v10Header.png",
+    "thumb": "/Thumbnails/engineCover.png",
+    "header": "/Headers/engineHeader.png",
     "paragraph": "Since my inline 3 engine model project I wanted to design a new model engine that could run under some sort of energ other than a hand crank. I was unsure what energy to base my new engine model off of until I saw a video by PolyProject3D on YouTube. He has made a collection of 3D printed engines that all run off of compressed air. The specific engine that peaked my interest is the V8 model engine he made. \n\n The reason why his V8 model engine intrigued me the most was because of the intricate intake and exhause manifolds he designed. The manifolds and the performance of the engine lead me to be reminded of the Lexus LFA due to its high revving nature and unique sound characteristic. Due to this I decided I would design my own version of the engine PolyProject3D made but in V10 form in inspiration from the LFA. I figured it would be the perfect project to learn how to manufacture more detailed and stress-enduring part using SLM printing. \n\n This project is quickly growing in scope as this engine is now be paired to an entire system of 3D printed drivetrain components to form an entire functioning(ish) model car. So far I have the engine mated to a transmission and a differential with the frame sitting on all around double-wishbone suspension.",
     "links": [
       {
