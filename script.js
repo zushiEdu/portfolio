@@ -8,6 +8,7 @@ let photosContainer1Height = 0;
 let photosContainer2Height = 0;
 
 let contentContainer = document.getElementsByClassName('content')[0];
+let morePageContainer = document.getElementById('morePageContainer');
 let projectsContainer = document.getElementById('projects');
 let photosContainer1 = document.getElementById('photoCol1');
 let photosContainer2 = document.getElementById('photoCol2');
@@ -83,7 +84,11 @@ fetch('/Data/projects.json')
                     let morePage = document.createElement('div');
 
                     more.addEventListener("click", function (event) {
-                        morePage.setAttribute("style", "display:block");
+                        for (let i = 0; i < morePageContainer.children.length; i++) {
+                            morePageContainer.children[i].style.display = "none";
+                        }
+                        morePage.style.display = "block";
+                        morePageContainer.style.display = 'block';
                     })
 
                     let li = document.createElement('li');
@@ -136,7 +141,7 @@ fetch('/Data/projects.json')
                     description.innerText = project.paragraph;
                     morePage.appendChild(description);
                     morePage.setAttribute("id", tileTag + "_page");
-                    contentContainer.appendChild(morePage);
+                    morePageContainer.appendChild(morePage);
                 }
 
                 section.appendChild(innerList);
@@ -168,7 +173,6 @@ fetch('/Data/projects.json')
             let link = document.createElement('a');
             link.innerText = k + 1;
             link.setAttribute('onclick', 'loadPage(' + (k + 1) + ')');
-            // link.setAttribute('href', '#projects');
             link.setAttribute('class', 'projectPagesNavText');
             link.setAttribute('id', 'page' + (k + 1) + 'Text');
             listItem.setAttribute('id', 'page' + (k + 1) + 'Link');
@@ -214,5 +218,13 @@ function loadPage(page) {
         if (document.getElementById(i) != undefined) {
             document.getElementById(i).style.display = 'table-row';
         }
+    }
+}
+
+function refreshPage() {
+    if (window.location.hash != '#projects' || window.location.hash != '#photography' || window.location.hash != '#awards' || window.location.hash != '#about-me') {
+        morePageContainer.style.display = 'none';
+    } else {
+        morePageContainer.style.display = 'block';
     }
 }

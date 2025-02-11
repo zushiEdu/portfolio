@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ethan Huber | Personal Website</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="/Branding/icon.png">
+    <link rel="icon" type="image/x-icon" href="/Branding/icon.png" />
   </head>
   <body>
     <div id="mainContent" class="frosted">
@@ -15,12 +15,23 @@
         <p class="bold">Navigation</p>
         <ul>
           <li class="italic">
-            <a href="?page=1#projects" id="projectsButton">Projects</a>
+            <a
+              href="?page=1#projects"
+              id="projectsButton"
+              onclick="refreshPage()"
+              >Projects</a
+            >
           </li>
-          <li class="italic"><a href="#photography">Photography</a></li>
-          <li class="italic"><a href="#awards">Awards</a></li>
+          <li class="italic">
+            <a href="#photography" onclick="refreshPage()">Photography</a>
+          </li>
+          <li class="italic">
+            <a href="#awards" onclick="refreshPage()">Awards</a>
+          </li>
           <li><br /></li>
-          <li class="italic"><a href="#about-me">About Me</a></li>
+          <li class="italic">
+            <a href="#about-me" onclick="refreshPage()">About Me</a>
+          </li>
           <li class="italic">
             <a href="/Documents/resume.pdf" target="_blank">Resume</a>
           </li>
@@ -62,6 +73,7 @@
         <div class="page" id="projects">
           <h3>Projects</h3>
         </div>
+        <div id="morePageContainer"></div>
         <div class="page" id="photography">
           <h3>Photography</h3>
           <p>
@@ -83,27 +95,21 @@
             <li><p>2019 SimmerJam Winner</p></li>
             <li><p>2020 SimmerJam Winner</p></li>
             <li>
+              <p>2022 Junior Level CCC competition (top 40%)</p>
+            </li>
+            <li>
+              <p>2023 Senior Level CCC competition (top 30%)</p>
+            </li>
+            <li>
               <p>
-                2022 Junior Level CCC competition (forgot score, I think I was
-                around top 40%)
+                2023 Canadian Senior Mathematics Contest (forgot score, around
+                the distinction cut-off)
               </p>
             </li>
             <li>
               <p>
-                2023 Senior Level CCC competition (forgot score, I think I was
-                around top 30%)
-              </p>
-            </li>
-            <li>
-              <p>
-                2023 Canadian Senior Mathematics Contest (forgot score, I think
-                I was right below the distinction cut-off)
-              </p>
-            </li>
-            <li>
-              <p>
-                2024 Euclid Contest (forgot score, I think I was right below the
-                distinction cut-off for this too)
+                2024 Euclid Contest (forgot score, around the distinction
+                cut-off for this too)
               </p>
             </li>
           </ul>
