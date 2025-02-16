@@ -301,12 +301,27 @@
     "tldr": "Desmos clone.",
     "header": "/Headers/calcheader.png",
     "paragraph": "A limited graphing calculator. The syntax recognition of this program is very picky and sensitive. This tool can draw polygons, and polynomials. I made this because I was curious how a graphing calculator drew math functions. I did not develop this tool very long as I quickly answered the question that inspired this project and got tired of programming functions to correctly interpret multiple styles of math syntax.",
-    "date": "2023-02-3",
+    "date": "2023-02-03",
     "thumb": "/Thumbnails/calc.png",
     "links": [
       {
         "displayText": "Github",
         "url": "https://github.com/zushiEdu/Calculator"
+      }
+    ],
+    "display": true
+  },
+  {
+    "title": "Ping Pong Ball Launcher",
+    "tldr": "Fully automatic.",
+    "header": null,
+    "paragraph": null,
+    "date": "2024-05-24",
+    "thumb": "/Headers/ballLauncher.png",
+    "links": [
+      {
+        "displayText": "OnShape",
+        "url": "https://cad.onshape.com/documents/bc8b914e59e73b09c5f258d2/w/59bb2482e53130beb3e3fea8/e/84eb7c22d77e5c841a2044cc?renderMode=0&uiState=67b12ef3d88eae224b021111"
       }
     ],
     "display": true

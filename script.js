@@ -2,7 +2,6 @@ let projectCounter = 0;
 let rowCounter = 0;
 let projectPageIndex = 1;
 const pageLength = 6;
-let masterProjects;
 let pageAmount = 0;
 let photosContainer1Height = 0;
 let photosContainer2Height = 0;
@@ -39,12 +38,15 @@ fetch('/Data/projects.json')
         projects = projects.sort(
             (p1, p2) => (p1.date < p2.date) ? 1 : (p1.date > p2.date) ? -1 : 0);
         projects.forEach((project) => {
+            // Check if the project is set to be displayed
             if (project.display) {
+                // Increment the project counter and create a cell for each project
                 projectCounter++;
                 let cell = document.createElement('td');
                 let section = document.createElement('section');
                 cell.id = project.title.replaceAll(" ", "_") + "_cell";
 
+                // Retrieve the thumbnail path from data and look for it in the files then add to tile
                 if (project.thumb != null) {
                     let image = document.createElement('img');
                     image.setAttribute("class", "contentThumb");
@@ -52,6 +54,7 @@ fetch('/Data/projects.json')
                     section.appendChild(image);
                 }
 
+                // Retrieve title from data and add element to tile
                 let innerList = document.createElement('ul');
 
                 let title;
@@ -62,6 +65,7 @@ fetch('/Data/projects.json')
 
                 }
 
+                // Retrieve tldr from data and add element to tile
                 let tldr;
                 if (project.tldr != null) {
                     tldr = document.createElement('p');
@@ -74,7 +78,9 @@ fetch('/Data/projects.json')
                 tileLi.appendChild(tldr);
                 innerList.appendChild(tileLi);
 
+                // Generate more data page for the tile if it exists
                 if (project.paragraph != null) {
+                    // Set attributes of more info page
                     let more = document.createElement('a');
                     let tileTag = project.title.replaceAll(" ", "_");
                     more.href = "#" + tileTag;
@@ -83,6 +89,7 @@ fetch('/Data/projects.json')
                     more.id = project.title.replaceAll(" ", "_") + "_link";
                     let morePage = document.createElement('div');
 
+                    // Create button to lead to more info page
                     more.addEventListener("click", function (event) {
                         for (let i = 0; i < morePageContainer.children.length; i++) {
                             morePageContainer.children[i].style.display = "none";
@@ -95,6 +102,7 @@ fetch('/Data/projects.json')
                     li.appendChild(more);
                     innerList.appendChild(li);
 
+                    // Create and set attributes for the back button
                     morePage.setAttribute("class", "page");
                     let description = document.createElement('p');
                     let back = document.createElement('a');
@@ -108,6 +116,7 @@ fetch('/Data/projects.json')
 
                     morePage.appendChild(back);
 
+                    // Create and set attributes for the information on the more page
                     let title = document.createElement('h2');
                     title.innerText = project.title;
                     morePage.appendChild(title);
@@ -122,7 +131,7 @@ fetch('/Data/projects.json')
                     date.setAttribute("style", "display:inline");
                     morePage.appendChild(date);
 
-
+                    // Create and add the links based on what is listed in the data file
                     if (project.links != null) {
                         const urls = project.links;
                         for (let j = 0; j < urls.length; j++) {
@@ -138,16 +147,20 @@ fetch('/Data/projects.json')
                         }
                     }
 
+                    // Create main body text and set attributes
                     description.innerText = project.paragraph;
                     morePage.appendChild(description);
                     morePage.setAttribute("id", tileTag + "_page");
                     morePageContainer.appendChild(morePage);
                 }
 
+                // Add more info page to inner page list
                 section.appendChild(innerList);
 
+                // Add cell to content section
                 cell.appendChild(section);
 
+                // Place cell based on current project counter index
                 let row = Math.round(projectCounter / 2);
                 if (document.getElementById(row)) {
                     tr = document.getElementById(row);
@@ -163,6 +176,7 @@ fetch('/Data/projects.json')
             }
         });
 
+        // Add button that leads to the more section on each tile
         let projectsNav = document.createElement('ul');
         projectsNav.id = 'projectsNav';
 
@@ -180,10 +194,13 @@ fetch('/Data/projects.json')
             projectsNav.appendChild(listItem);
         }
 
+        // Add entire section to project container
         projectsContainer.appendChild(projectsNav);
 
+        // Show/hide tiles based on current page
         loadPage(projectPageIndex);
 
+        // Check if a specific more info page was pointed to and redirect to there automatically
         if ((window.location.hash == '')) {
             console.log("Landed on no content page, redirecting to projects.");
             document.getElementById('projectsButton').click();
@@ -195,13 +212,16 @@ fetch('/Data/projects.json')
 
     });
 
+// function to edit what rows/tiles are displayed based on url
 function loadPage(page) {
     projectPageIndex = page;
 
+    // check for url
     const url = new URL(window.location);
     url.searchParams.set("page", projectPageIndex);
     history.pushState(null, '', url);
 
+    // Iterate through pages to set visibility
     for (let i = 1; i < pageAmount + 1; i++) {
         if (i == projectPageIndex) {
             document.getElementById('page' + i + 'Text').style.textDecoration = 'underline';
@@ -210,10 +230,12 @@ function loadPage(page) {
         }
     }
 
+    // Iterate through rows that should not be visible and set none to display
     for (let i = 1; i <= rowCounter; i++) {
         document.getElementById(i).style.display = 'none';
     }
 
+    // Iterate through rows that should be visible and set to display
     for (let i = (page * 3) - 2; i <= page * 3; i++) {
         if (document.getElementById(i) != undefined) {
             document.getElementById(i).style.display = 'table-row';
@@ -221,10 +243,12 @@ function loadPage(page) {
     }
 }
 
-function refreshPage() {
-    if (window.location.hash != '#projects' || window.location.hash != '#photography' || window.location.hash != '#awards' || window.location.hash != '#about-me') {
+
+// Check if a hash change has happened and set visibility of the more page container based upon that (is the fix to more page sections lingering after an interaction)
+window.addEventListener("hashchange", function (e) {
+    if (window.location.hash == '#projects' || window.location.hash == '#photography' || window.location.hash == '#awards' || window.location.hash == '#about-me') {
         morePageContainer.style.display = 'none';
     } else {
         morePageContainer.style.display = 'block';
     }
-}
+});
