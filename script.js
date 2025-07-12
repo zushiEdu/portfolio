@@ -16,6 +16,20 @@ const urlParams = new URLSearchParams(window.location.search);
 const pageParam = urlParams.get('page');
 projectPageIndex = pageParam;
 
+const icons = new Map([
+    ["onshape", "onshape.png"],
+    ["arduino", "arduino.png"],
+    ["css", "css.png"],
+    ["golang", "golang.png"],
+    ["html", "html.png"],
+    ["java", "java.png"],
+    ["javascript", "javascript.png"],
+    ["mariadb", "mariadb.png"],
+    ["revit", "revit.png"],
+    ["unity", "unity.png"],
+    ["unraid", "unraid.png"]
+]);
+
 fetch('/Data/photos.json')
     .then(response => response.json())
     .then(images => {
@@ -144,6 +158,19 @@ fetch('/Data/projects.json')
                             link.target = '_blank';
                             morePage.appendChild(seperator);
                             morePage.appendChild(link);
+                        }
+                    }
+
+                    if (project.technologies != null) {
+                        const seperator = document.createElement('a')
+                        seperator.textContent = " | ";
+                        morePage.appendChild(seperator)
+
+                        for (let i = 0; i < project.technologies.length; i++) {
+                            let icon = document.createElement('img')
+                            icon.src = "/Icons/" + icons.get(project.technologies[i]);
+                            icon.className = "techIcon"
+                            morePage.appendChild(icon);
                         }
                     }
 

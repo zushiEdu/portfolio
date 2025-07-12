@@ -12,6 +12,7 @@
         "url": "https://cad.onshape.com/documents/53da988791f59355cf7d8db7/w/781ae9665a3aab0ba98f85d1/e/cfb4efc1f7ba104ccf16797a?renderMode=0&uiState=6761c096e7632109579b4162"
       }
     ],
+    "technologies": ["onshape"],
     "display": true
   },
   {
@@ -27,6 +28,7 @@
         "url": "https://cad.onshape.com/documents/6403fa02ac086c170fbd5848/w/d91e60e6e3e1fa026ac96b9c/e/3cfb50852aa6d2020ada619e?renderMode=0&uiState=65367b3624e5ce05edde47b2"
       }
     ],
+    "technologies": ["onshape", "arduino"],
     "display": true
   },
   {
@@ -50,6 +52,7 @@
         "url": "https://circuit-creator.netlify.app/"
       }
     ],
+    "technologies": ["html", "css", "javascript"],
     "display": true
   },
   {
@@ -65,6 +68,7 @@
         "url": "https://drive.google.com/file/d/1gG-xrhUi0TOF__Ypgh2d96JAMIrp12KV/view?usp=share_link"
       }
     ],
+    "technologies": ["revit"],
     "display": true
   },
   {
@@ -80,6 +84,7 @@
         "url": "https://cad.onshape.com/documents/fb672b899105e8fe2cccd16c/w/00d0be8d5cafd92ae1b535e8/e/181aaa921fab5f379f3ec892?renderMode=0&uiState=6761d12b3cd3db00f60b5a3d"
       }
     ],
+    "technologies": ["onshape"],
     "display": true
   },
   {
@@ -95,6 +100,7 @@
         "url": "https://github.com/zushiEdu/Caved"
       }
     ],
+    "technologies": ["java"],
     "display": true
   },
   {
@@ -110,6 +116,7 @@
         "url": "https://cad.onshape.com/documents/544fbc1eaf97fb38b2cc1181/w/b038ccf2b9b97ac63344c1d3/e/d2ab5332e97499c1402bfaf2?renderMode=0&uiState=6537cbbdbafa29274aefedf9"
       }
     ],
+    "technologies": ["onshape", "arduino"],
     "display": true
   },
   {
@@ -129,6 +136,7 @@
         "url": "https://farmunation.netlify.app/"
       }
     ],
+    "technologies": ["html", "css", "javascript"],
     "display": true
   },
   {
@@ -144,6 +152,7 @@
         "url": "https://zushiedu.github.io/references/"
       }
     ],
+    "technologies": ["html", "css", "javascript"],
     "display": true
   },
   {
@@ -159,6 +168,7 @@
         "url": "https://github.com/zushiEdu/distroSys"
       }
     ],
+    "technologies": ["html", "css", "javascript", "onshape", "arduino"],
     "display": true
   },
   {
@@ -174,6 +184,7 @@
         "url": "https://drive.google.com/file/d/1sUmH5NT5s2S_HT_ar92Id2AFVNsVzVOM/view?usp=sharing"
       }
     ],
+    "technologies": ["revit"],
     "display": true
   },
   {
@@ -189,6 +200,7 @@
         "url": "https://cad.onshape.com/documents/a54b6e0f62a3824814911c99/w/596cb1a10a93d8a0eebd478b/e/336c2f53ee64dad772964e8c?renderMode=0&uiState=6655fbb112bf0b675b2efcb3"
       }
     ],
+    "technologies": ["onshape"],
     "display": true
   },
   {
@@ -204,6 +216,7 @@
         "url": "https://cad.onshape.com/documents/be6a19b6cd8156f4d2462fe2/w/89b98f1e40a23d46c809e031/e/88d7c1ddbc091d987d4ed6c4?renderMode=0&uiState=6655fc63c9cafb19d42d6be7"
       }
     ],
+    "technologies": ["onshape", "arduino"],
     "display": true
   },
   {
@@ -219,6 +232,7 @@
         "url": "https://drive.google.com/file/d/1YbHRbfNrMHDQimhHVAA0tkMaXc_kLmqk/view?usp=sharing"
       }
     ],
+    "technologies": ["revit"],
     "display": true
   },
   {
@@ -234,6 +248,7 @@
         "url": "https://zushidev.itch.io/food-inc"
       }
     ],
+    "technologies": ["unity"],
     "display": true
   },
   {
@@ -249,6 +264,7 @@
         "url": "https://zushidev.github.io/index.html"
       }
     ],
+    "technologies": ["html", "css", "javascript"],
     "display": true
   },
   {
@@ -264,6 +280,7 @@
         "url": "https://ecoconnect.netlify.app/"
       }
     ],
+    "technologies": ["html", "css", "javascript"],
     "display": true
   },
   {
@@ -279,6 +296,7 @@
         "url": "https://zushiedu.github.io/Basalt/"
       }
     ],
+    "technologies": ["html", "css", "javascript"],
     "display": true
   },
   {
@@ -294,6 +312,7 @@
         "url": "https://github.com/zushiEdu/Rocketeer"
       }
     ],
+    "technologies": ["java"],
     "display": true
   },
   {
@@ -309,6 +328,7 @@
         "url": "https://github.com/zushiEdu/Calculator"
       }
     ],
+    "technologies": ["html", "css", "javascript"],
     "display": true
   },
   {
@@ -324,6 +344,7 @@
         "url": "https://cad.onshape.com/documents/bc8b914e59e73b09c5f258d2/w/59bb2482e53130beb3e3fea8/e/84eb7c22d77e5c841a2044cc?renderMode=0&uiState=67b12ef3d88eae224b021111"
       }
     ],
+    "technologies": ["onshape"],
     "display": true
   }
 ]
