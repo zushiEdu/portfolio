@@ -16,6 +16,29 @@
     "display": true
   },
   {
+    "title": "BasicMessanger",
+    "tldr": "Self hosted basic messaging app",
+    "date": "2025-05-21",
+    "thumb": "/Thumbnails/basicMessanger.png",
+    "header": "",
+    "paragraph": "BasicMessanger is a basic messaging web app. The front end is built with HTML, CSS, and JavaScript which makes requests to the backend REST API. The API is built in Golang using MariaDB to store messages. The server which runs the API runs on my self built linux Unraid machine in a docker container that automatically pulls docker images from the Github image. Images are automatically built with Github actions upon every commit. The learning goals of this project were to learn Golang, and SQL in a useful context.\n\nThere is no web-app for this project due to home network security concerns.",
+    "links": [
+      {
+        "displayText": "Github",
+        "url": "https://github.com/zushiEdu/basicmessanger"
+      }
+    ],
+    "technologies": [
+      "html",
+      "css",
+      "javascript",
+      "unraid",
+      "golang",
+      "mariadb"
+    ],
+    "display": true
+  },
+  {
     "title": "2024 Battle Bots",
     "tldr": "Build for the 2023-2024 HHSS battle bots season.",
     "date": "2024-05-13",

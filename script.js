@@ -135,10 +135,12 @@ fetch('/Data/projects.json')
                     title.innerText = project.title;
                     morePage.appendChild(title);
 
-                    let header = document.createElement('img');
-                    header.src = project.header;
-                    header.setAttribute("class", "moreInfoHeader");
-                    morePage.appendChild(header);
+                    if (project.header != "") {
+                        let header = document.createElement('img');
+                        header.src = project.header;
+                        header.setAttribute("class", "moreInfoHeader");
+                        morePage.appendChild(header);
+                    }
 
                     let date = document.createElement('p');
                     date.innerText = project.date;
