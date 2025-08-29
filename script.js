@@ -1,7 +1,7 @@
 let projectCounter = 0;
 let rowCounter = 0;
 let projectPageIndex = 1;
-const pageLength = 6;
+const rowAmount = 4;
 let pageAmount = 0;
 let photosContainer1Height = 0;
 let photosContainer2Height = 0;
@@ -209,7 +209,7 @@ fetch('/Data/projects.json')
         let projectsNav = document.createElement('ul');
         projectsNav.id = 'projectsNav';
 
-        pageAmount = Math.ceil(projects.length) / pageLength;
+        pageAmount = Math.ceil(projects.length / (rowAmount * 2));
 
         for (let k = 0; k < pageAmount; k++) {
             let listItem = document.createElement('li');
@@ -265,7 +265,7 @@ function loadPage(page) {
     }
 
     // Iterate through rows that should be visible and set to display
-    for (let i = (page * 3) - 2; i <= page * 3; i++) {
+    for (let i = (page * rowAmount) - (rowAmount - 1); i <= page * rowAmount; i++) {
         if (document.getElementById(i) != undefined) {
             document.getElementById(i).style.display = 'table-row';
         }
