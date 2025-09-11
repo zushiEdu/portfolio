@@ -27,7 +27,8 @@ const icons = new Map([
     ["mariadb", "mariadb.png"],
     ["revit", "revit.png"],
     ["unity", "unity.png"],
-    ["unraid", "unraid.png"]
+    ["unraid", "unraid.png"],
+    ["sqlite", "sqlite.png"]
 ]);
 
 fetch('/Data/photos.json')
@@ -177,7 +178,10 @@ fetch('/Data/projects.json')
                     }
 
                     // Create main body text and set attributes
-                    description.innerText = project.paragraph;
+                    paragraphText = project.paragraph;
+                    description.innerHTML = paragraphText.replaceAll("\n", "<br>").replaceAll(/\*\*\* (.+?) \*\*\*/g, '<h3>$1</h3>')
+                        .replaceAll(/\*\* (.+?) \*\*/g, '<h4>$1</h4>')
+                        .replaceAll(/\* (.+?) \*/g, '<h5>$1</h5>');
                     morePage.appendChild(description);
                     morePage.setAttribute("id", tileTag + "_page");
                     morePageContainer.appendChild(morePage);
