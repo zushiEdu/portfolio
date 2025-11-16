@@ -279,6 +279,10 @@ line-height: 1.1em;
         padding: 0;
         display: block;
     }
+    
+    #about-me p img{
+        width: 50%;
+    }
 
     .frosted{
         background: rgba(255, 255, 255, 0.1);
@@ -307,6 +311,11 @@ line-height: 1.1em;
         font-size:1em;
         line-height: 1em;
         margin: 0;
+    }
+
+    #featured tr section ul{
+        width: 90%;
+        top: 35%;
     }
 
     #projects tr section ul{
