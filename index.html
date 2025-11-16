@@ -3,6 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Hey, I'm Ethan, a second-year Computer Engineering student at the University of Guelph."
+    />
+
+    <meta
+      name="keywords"
+      content="portfolio, computer engineering, web development, robotics, programming"
+    />
+
     <title>Ethan Huber | Personal Website</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="icon" type="image/x-icon" href="/Branding/icon.png" />
@@ -15,20 +26,23 @@
         <p class="bold">Navigation</p>
         <ul>
           <li class="italic">
+            <a href="#home" id="homeButton">Home</a>
+          </li>
+          <li class="italic">
             <a href="?page=1#projects" id="projectsButton">Projects</a>
           </li>
           <li class="italic">
             <a href="#photography">Photography</a>
           </li>
-          <li class="italic">
+          <!-- <li class="italic">
             <a href="#awards">Awards</a>
-          </li>
+          </li> -->
           <li><br /></li>
           <li class="italic">
             <a href="#about-me">About Me</a>
           </li>
           <li class="italic">
-            <a href="/Documents/resume.pdf" target="_blank">Resume</a>
+            <a href="#resume">Resume</a>
           </li>
           <li><br /></li>
 
@@ -59,16 +73,34 @@
           </ul>
         </ul>
       </div>
+
       <div class="content">
-        <div class="page" id="projects">
-          <h3>Projects</h3>
+        <div class="page" id="home">
+          <h3 class="centered">Home</h3>
+          <h3>Hello 👋</h3>
+          <p>
+            I'm Ethan, an engineer with a passion for building innovative
+            websites, robots, tools to improve life, and developing games. As a
+            second-year Computer Engineering student at the University of
+            Guelph, I love turning ideas into tangible projects.
+          </p>
+          <h3>Featured Projects</h3>
+          <div id="featured"></div>
         </div>
+
+        <div class="page" id="projects">
+          <h3 class="centered">Projects</h3>
+        </div>
+
         <div id="morePageContainer"></div>
-        <div class="page" id="photography">
+
+        <div class="page centered" id="photography">
           <h3>Photography</h3>
           <p>
             All photos are original. <br />Please contact me if you would like
-            permission to use any of my media.
+            permission to use any of my media. <br />
+            Note: loading may take a while since all photos are rendered in
+            their original resolution.
           </p>
           <table>
             <tr>
@@ -77,6 +109,7 @@
             </tr>
           </table>
         </div>
+
         <div class="page" id="awards">
           <h3>Awards</h3>
           <p>Contests</p>
@@ -109,16 +142,40 @@
             <li><p>Huron Heights Excellence in Technology Award</p></li>
           </ul>
         </div>
+
         <div class="page" id="about-me">
-          <h3>About Me</h3>
+          <h3 class="centered">About Me</h3>
           <p>
-            Hello, my name is Ethan. I enjoy building websites, robots and
-            creating games. Currently I am in my first year of Computer
-            Engineering at the University of Guelph. <br /><br />I commonly
-            program in Java, Javascript, C#, C, Python and other C based
-            languages. I use OnShape and Revit to create all of my design
-            projects.<br /><br />This website is currently under construction.
+            <img src="/Photography/IMG_2846.jpeg" class="aboutImg" />
+            Hi, I'm Ethan, an engineer with a passion for building functional
+            websites, robots, and developing games. As a second-year Computer
+            Engineering student at the University of Guelph, I love turning
+            ideas into tangible projects. <br /><br />My experience spans
+            everything from 3D printed engines to autonomous robots. I enjoy
+            learning new technologies and always pushing myself to find
+            innovative solutions for problems wether that be optimizing PCB
+            layout, mentoring others in competitions, or developing tools to
+            improve life. <br /><br />
+            I am a member on the Gryphon Racing FSAE team and the UofG Robotics
+            team. On the Gryphon Racing team I work as a member of the Frame
+            subsection where I am currently designing the 3D printed jigs we are
+            going to use to precisely fabricate the frame. On the UofG Robotics
+            team I am on the Electrical subsection where I am currently
+            designing the power distribution board that converts the power from
+            the battery into the different voltages needed for each of the
+            rovers modules. I have a post about the power distribution board
+            that goes into the details of it.
           </p>
+        </div>
+
+        <div class="page" id="resume">
+          <h3 class="centered">Resume</h3>
+          <embed
+            src="/Documents/Resume.pdf"
+            type="application/pdf"
+            width="100%"
+            class="pdf"
+          />
         </div>
       </div>
     </div>

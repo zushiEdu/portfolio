@@ -6,15 +6,23 @@ let pageAmount = 0;
 let photosContainer1Height = 0;
 let photosContainer2Height = 0;
 
+let featuredRow = null;
+let featuredCellCount = 0;
+
 let contentContainer = document.getElementsByClassName('content')[0];
 let morePageContainer = document.getElementById('morePageContainer');
 let projectsContainer = document.getElementById('projects');
+let featuredContainer = document.getElementById('featured');
 let photosContainer1 = document.getElementById('photoCol1');
 let photosContainer2 = document.getElementById('photoCol2');
+
+const featured = ["Filedex", "2024 Battle Bots", "Power Distribution Board", "Caved"]
 
 const urlParams = new URLSearchParams(window.location.search);
 const pageParam = urlParams.get('page');
 projectPageIndex = pageParam;
+
+var currentSection = "home";
 
 const icons = new Map([
     ["onshape", "onshape.png"],
@@ -28,7 +36,8 @@ const icons = new Map([
     ["revit", "revit.png"],
     ["unity", "unity.png"],
     ["unraid", "unraid.png"],
-    ["sqlite", "sqlite.png"]
+    ["sqlite", "sqlite.png"],
+    ["kicad", "kicad.png"]
 ]);
 
 fetch('/Data/photos.json')
@@ -37,6 +46,7 @@ fetch('/Data/photos.json')
         images.forEach((image) => {
             let img = document.createElement('img');
             img.src = image.url;
+            img.loading = "lazy";
             if (photosContainer1Height >= photosContainer2Height) {
                 photosContainer2Height += 1;
                 photosContainer2.appendChild(img);
@@ -65,6 +75,8 @@ fetch('/Data/projects.json')
                 if (project.thumb != null) {
                     let image = document.createElement('img');
                     image.setAttribute("class", "contentThumb");
+                    image.setAttribute("loading", "lazy");
+                    image.setAttribute("fetchpriority", "high");
                     image.src = project.thumb;
                     section.appendChild(image);
                 }
@@ -120,13 +132,16 @@ fetch('/Data/projects.json')
                     // Create and set attributes for the back button
                     morePage.setAttribute("class", "page");
                     let description = document.createElement('p');
+
                     let back = document.createElement('a');
-                    back.href = "#projects";
+                    back.href = "#";
                     back.setAttribute("class", "underlined");
                     back.textContent = "Back";
 
                     back.addEventListener("click", function (event) {
-                        morePage.setAttribute("style", "display:none");
+                        event.preventDefault();
+                        window.location.hash = currentSection;
+                        morePage.style.display = "none";
                     })
 
                     morePage.appendChild(back);
@@ -206,6 +221,36 @@ fetch('/Data/projects.json')
                     rowCounter++;
                     projectsContainer.appendChild(newRow);
                 }
+
+                if (featured.includes(project.title)) {
+                    let dupCell = cell.cloneNode(true)
+                    const moreLink = dupCell.querySelector('a.underlined');
+
+                    if (moreLink && project.paragraph != null) {
+                        moreLink.addEventListener("click", function (event) {
+                            for (let i = 0; i < morePageContainer.children.length; i++) {
+                                morePageContainer.children[i].style.display = "none";
+                            }
+
+                            const morePage = document.getElementById(project.title.replaceAll(" ", "_") + "_page");
+                            if (morePage) {
+                                morePage.style.display = "block";
+                                morePageContainer.style.display = 'block';
+                            }
+                        })
+                    }
+
+                    if (featuredCellCount % 2 === 0) {
+                        // Start new row every 2 cells
+                        featuredRow = document.createElement('tr');
+                        featuredContainer.appendChild(featuredRow);
+                    }
+
+                    featuredRow.appendChild(dupCell);
+                    featuredCellCount++;
+
+                    featuredContainer.appendChild(featuredRow);
+                }
             }
         });
 
@@ -236,9 +281,10 @@ fetch('/Data/projects.json')
         // Check if a specific more info page was pointed to and redirect to there automatically
         if ((window.location.hash == '')) {
             console.log("Landed on no content page, redirecting to projects.");
-            document.getElementById('projectsButton').click();
-        } else if (!(window.location.hash == '#projects' || window.location.hash == '#photography' || window.location.hash == '#awards' || window.location.hash == '#about-me')) {
-            console.log("Someone tried directing to a specific page, directing to page.");
+            // document.getElementById('projectsButton').click();
+            document.getElementById('homeButton').click();
+        } else if (!(window.location.hash == '#projects' || window.location.hash == '#photography' || window.location.hash == '#awards' || window.location.hash == '#about-me' || window.location.hash == '#home' || window.location.hash == '#resume')) {
+            // console.log("Someone tried directing to a specific page, directing to that page.");
             document.getElementById('projectsButton').click();
             document.getElementById(window.location.hash.replace("#", '') + "_link").click();
         }
@@ -253,6 +299,8 @@ function loadPage(page) {
     const url = new URL(window.location);
     url.searchParams.set("page", projectPageIndex);
     history.pushState(null, '', url);
+
+    window.scrollTo(0, 0);
 
     // Iterate through pages to set visibility
     for (let i = 1; i < pageAmount + 1; i++) {
@@ -279,8 +327,9 @@ function loadPage(page) {
 
 // Check if a hash change has happened and set visibility of the more page container based upon that (is the fix to more page sections lingering after an interaction)
 window.addEventListener("hashchange", function (e) {
-    if (window.location.hash == '#projects' || window.location.hash == '#photography' || window.location.hash == '#awards' || window.location.hash == '#about-me') {
+    if (window.location.hash == '#projects' || window.location.hash == '#photography' || window.location.hash == '#awards' || window.location.hash == '#about-me' || window.location.hash == '#home' || window.location.hash == '#resume') {
         morePageContainer.style.display = 'none';
+        currentSection = window.location.hash;
     } else {
         morePageContainer.style.display = 'block';
     }

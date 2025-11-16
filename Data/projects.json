@@ -1,11 +1,21 @@
 [
   {
+    "title": "Power Distribution Board",
+    "tldr": "UofG Robotics Team Project",
+    "date": "2025-11-10",
+    "thumb": "/Thumbnails/pdb.png",
+    "header": "/Headers/pdbHeader.jpg",
+    "paragraph": "The power distribution board is a reliable and organized solution for managing power delivery to the UofG's rover's modules. The board was designed in KiCad, and supports and allocates power to various modules including some notable ones such as the Light, Arm, Fan, and Antenna boards. Each output was designed with its unique requirements in mind, ensuring correct routing and current capacity across all connections. \n\n A significant aspect of this project was the collaboration with team members, particularly with the mechanical subsection. Clear communication ensured the PCB's footprint met the constraints of the overall assembly. \n\n The board incorporates practices, such as dedicated ideal fuse protection for the major outputs, optimal power trace sizing, and connector orientations. Design decisions were influenced by past designs and collaboration with the team. \n\n A major struggle with this project was configuring the board in such a way that the converters would be close to the outputs but also fit within the board size requirements. I ended up deciding to mount the converters on top of the board on a tray. This is why there is a higher than normal count of connectors on the board. ",
+    "technologies": ["onshape", "kicad"],
+    "display": true
+  },
+  {
     "title": "V10 Pneumatic Engine",
     "tldr": "A model V10 engine that runs off of compressed air.",
     "date": "2024-09-20",
     "thumb": "/Thumbnails/engineCover.png",
     "header": "/Headers/engineHeader.png",
-    "paragraph": "Since my inline 3 engine model project I wanted to design a new model engine that could run under some sort of energ other than a hand crank. I was unsure what energy to base my new engine model off of until I saw a video by PolyProject3D on YouTube. He has made a collection of 3D printed engines that all run off of compressed air. The specific engine that peaked my interest is the V8 model engine he made. \n\n The reason why his V8 model engine intrigued me the most was because of the intricate intake and exhause manifolds he designed. The manifolds and the performance of the engine lead me to be reminded of the Lexus LFA due to its high revving nature and unique sound characteristic. Due to this I decided I would design my own version of the engine PolyProject3D made but in V10 form in inspiration from the LFA. I figured it would be the perfect project to learn how to manufacture more detailed and stress-enduring part using SLM printing. \n\n This project is quickly growing in scope as this engine is now be paired to an entire system of 3D printed drivetrain components to form an entire functioning(ish) model car. So far I have the engine mated to a transmission and a differential with the frame sitting on all around double-wishbone suspension.",
+    "paragraph": "Since my inline 3 engine model project I wanted to design a new model engine that could run under some sort of energy other than a hand crank. I was unsure what energy to base my new engine model off of until I saw a video by PolyProject3D on YouTube. He has made a collection of 3D printed engines that all run off of compressed air. The specific engine that peaked my interest is the V8 model engine he made. \n\n The reason why his V8 model engine intrigued me the most was because of the intricate intake and exhaust manifolds he designed. The manifolds and the performance of the engine lead me to be reminded of the Lexus LFA due to its high revving nature and unique sound characteristic. Due to this I decided I would design my own version of the engine PolyProject3D made but in V10 form in inspiration from the LFA. I figured it would be the perfect project to learn how to manufacture more detailed and stress-enduring part using SLM printing. \n\n This project is quickly growing in scope as this engine is now be paired to an entire system of 3D printed drivetrain components to form an entire functioning(ish) model car. So far I have the engine connected to a transmission and a differential with the frame sitting on all around double-wishbone suspension.",
     "links": [
       {
         "displayText": "OnShape",
@@ -60,7 +70,7 @@
     "date": "2024-05-13",
     "thumb": "/Thumbnails/24battle-bot.png",
     "header": "/Headers/24btlbotHeader.png",
-    "paragraph": "The battle bot I built for the 2024 season was designed off of a year of experience where I learnt everything from where to buy affordable fasteners to how to best design a frame to resist attack. The robot for the 2024 season was completely redesigned from the ground up to prioritize frame rigidity, value, and fairness first. I decided to consider value and fairness as integral aspects because I could transfer what I thought was fair into the parts I was tasked with buying for the 2024 season. I needed to make sure that the parts I decided to buy were easy to learn with, effective in battle bots, but also effective for other activies (i.e. drones). I also needed to ensure that the teams could fairly compete no matter what skill level and budget at hand. \n\nThe reason why this specifically spoke to me is because I felt that the 2023 season was unfair due to the wide range of budget, team sizes, and robot sizes. There were no standards in the 2023 season. There was also no defined scoring system which meant teams were blindly going into the competition not knowing how a winner would be decided. These were all issues that were remedied in the 2024 season. I supplied fasteners to whomever needed them, 3D printing parts for other people when I could, designed rules to consider all aspects of battle (as to deter boring metas from forming), and I generally helped/mentored around 10 teams with their bots. I felt I had a lot more fun in the 2024 season and I hope a lot of other people did too as that is how I would measure my success. \n\n My battle bot had the following specs:\n- 4 1/2\" saw blade\n- Drone motor driven by a D2822 ESC (weapon)\n- Dual 25GA-370 drive motors driven by an L298N\n- Arduino Uno\n- Bluetooth receiver (smartphone control)\n- 50mm computer fan for cooling\n- 4 18650 Lithium-Ion batteries",
+    "paragraph": "The battle bot I built for the 2024 season was designed off of a year of experience where I learnt everything from where to buy affordable fasteners to how to best design a frame to resist attack. The robot for the 2024 season was completely redesigned from the ground up to prioritize frame rigidity, value, and fairness first. I decided to consider value and fairness as integral aspects because I could transfer what I thought was fair into the parts I was tasked with buying for the 2024 season. I needed to make sure that the parts I decided to buy were easy to learn with, effective in battle bots, but also effective for other activities (i.e. drones). I also needed to ensure that the teams could fairly compete no matter what skill level and budget at hand. \n\nThe reason why this specifically spoke to me is because I felt that the 2023 season was unfair due to the wide range of budget, team sizes, and robot sizes. There were no standards in the 2023 season. There was also no defined scoring system which meant teams were blindly going into the competition not knowing how a winner would be decided. These were all issues that were remedied in the 2024 season. I supplied fasteners to whomever needed them, 3D printing parts for other people when I could, designed rules to consider all aspects of battle (as to deter boring metas from forming), and I generally helped/mentored around 10 teams with their bots. I felt I had a lot more fun in the 2024 season and I hope a lot of other people did too as that is how I would measure my success. \n\n My battle bot had the following specs:\n- 4 1/2\" saw blade\n- Drone motor driven by a D2822 ESC (weapon)\n- Dual 25GA-370 drive motors driven by an L298N\n- Arduino Uno\n- Bluetooth receiver (smartphone control)\n- 50mm computer fan for cooling\n- 4 18650 Lithium-Ion batteries",
     "links": [
       {
         "displayText": "OnShape",
@@ -76,7 +86,7 @@
     "date": "2023-04-03",
     "thumb": "/Thumbnails/clc.png",
     "header": "/Headers/circuitHeader.png",
-    "paragraph": "Circuit Layout Creator or CLC is an open source, circuit layout creation website. This project was inspired by DIYLC, with the main difference being that this web-app is compatable on all devices as long as they have a web broswer and a physical keyboard. As this project is currently being supported by a small group of people and developed by a single developer, lots of features are being worked on. As it stands a basic circuit can be created from start to finish. The biggest change that needs to be made is an improvement to the current control scheme. Everything in this app is done through they keyboard which is the biggest suggested category of change given by the alpha-testers. The control system in the future will be able to integrate the mouse to click and drag components around.\n\nThe entire web-app is programmed in Javascript utilizing easy to read JSON files and custom component files to draw the components on the canvas.",
+    "paragraph": "Circuit Layout Creator or CLC is an open source, circuit layout creation website. This project was inspired by DIYLC, with the main difference being that this web-app is compatible on all devices as long as they have a web browser and a physical keyboard. As this project is currently being supported by a small group of people and developed by a single developer, lots of features are being worked on. As it stands a basic circuit can be created from start to finish. The biggest change that needs to be made is an improvement to the current control scheme. Everything in this app is done through they keyboard which is the biggest suggested category of change given by the alpha-testers. The control system in the future will be able to integrate the mouse to click and drag components around.\n\nThe entire web-app is programmed in Javascript utilizing easy to read JSON files and custom component files to draw the components on the canvas.",
     "links": [
       {
         "displayText": "Github",
@@ -132,7 +142,7 @@
     "date": "2022-01-25",
     "thumb": "/Thumbnails/caved.png",
     "header": "/Headers/cavedheader.png",
-    "paragraph": "A retro 2D terminal remake of the game Minecraft made in Java. Crafting, mining, sleeping, building, saving/loading maps, and killing mobs are all things possible in this game.\n\n The map is procedurally generated and the enemies are driven by a basic AI algorithm.",
+    "paragraph": "A retro 2D terminal remake of the game Minecraft made in Java. Crafting, mining, sleeping, building, saving/loading maps, and killing mobs are all things possible in this game.\n\n The map is procedurally generated and the enemies are driven by a basic AI algorithm. \n\n This was the first major game I created in Java which I built in my Grade 11 Computer Science class. ",
     "links": [
       {
         "displayText": "Github",
@@ -148,7 +158,7 @@
     "date": "2023-06-26",
     "thumb": "/Thumbnails/23battle-bot.png",
     "header": "/Headers/23btlbotHeader.png",
-    "paragraph": "Battle Bot for the HHSS 2022-2023 battle season. This bot uses a plastic spinner as its weapon, driven by an old weed wackers DC motor. The drive train is powered by 25GA-370 motors controlled through dual L288N drivers and an Arduino Uno receiving bluetooth contorl inputs. The components in this robot are air cooled by a 50mm computer fan.",
+    "paragraph": "Battle Bot for the HHSS 2022-2023 battle season. This bot uses a plastic spinner as its weapon, driven by an old weed wackers DC motor. The drive train is powered by 25GA-370 motors controlled through dual L288N drivers and an Arduino Uno receiving bluetooth control inputs. The components in this robot are air cooled by a 50mm computer fan.",
     "links": [
       {
         "displayText": "OnShape",
@@ -214,7 +224,7 @@
     "title": "Indoor/Outdoor 2 Floor Go Kart Facility.",
     "tldr": "Warehouse converted to go kart track.",
     "header": "/Headers/kartHeader.png",
-    "paragraph": "This facility was made in my Grade 12 tech design class using Revit. The facility contains a two story, indoor and outdoor track with multiple configurations. It features a second floor viewing loft, a machine shop for maintenence and a lobby. For floor plans and more 3d views/information, check out the PFD.",
+    "paragraph": "This facility was made in my Grade 12 tech design class using Revit. The facility contains a two story, indoor and outdoor track with multiple configurations. It features a second floor viewing loft, a machine shop for maintenance and a lobby. For floor plans and more 3d views/information, check out the PFD.",
     "date": "2024-04-28",
     "thumb": "/Thumbnails/kart.png",
     "links": [
@@ -246,7 +256,7 @@
     "title": "Fire Fighting Maze Robot",
     "tldr": "Autonomous fire fighting robot.",
     "header": "/Headers/mazerbt.png",
-    "paragraph": "Made for my Grade 12 computer tech class using OnShape. Features a pair of ultrasonic sensors, an infrared sensor and a temperature sensor. All the sensors communicate to the Arduino which controls the wheels and pump using a L298N motor driver. I also built the maze that our class used for this project as tasked by my teacher. \n\n Additionally I learnt how to make an enclosure for the robot which both serves structural and aesthetic purposes which taught me how to better account for tolerences when 3D printing.",
+    "paragraph": "Made for my Grade 12 computer tech class using OnShape. Features a pair of ultrasonic sensors, an infrared sensor and a temperature sensor. All the sensors communicate to the Arduino which controls the wheels and pump using a L298N motor driver. I also built the maze that our class used for this project as tasked by my teacher. \n\n Additionally I learnt how to make an enclosure for the robot which both serves structural and aesthetic purposes which taught me how to better account for tolerances when 3D printing.",
     "date": "2024-05-29",
     "thumb": "/Thumbnails/fireBot.png",
     "links": [
@@ -262,7 +272,7 @@
     "title": "Dream House",
     "tldr": "Dream house designed in Grade 12 Tech Design.",
     "header": "/Headers/drmHouseHeader2.png",
-    "paragraph": "Made for my Grade 12 tech design class using Revit. Features many places to put a car including a car lift. Up to 14 people can comfortably sleep in this home, this includes a guest suite above the garage. Contains unique features such as an infinity pool, gym, theatre, converstaion pit and a wine cellar.",
+    "paragraph": "Made for my Grade 12 tech design class using Revit. Features many places to put a car including a car lift. Up to 14 people can comfortably sleep in this home, this includes a guest suite above the garage. Contains unique features such as an infinity pool, gym, theatre, conversation pit and a wine cellar.",
     "date": "2024-05-29",
     "thumb": "/Thumbnails/drmHouse.png",
     "links": [
