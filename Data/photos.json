@@ -1,41 +1,54 @@
 [
   {
-    "url": "/Photography/basslake.png"
+    "url": "/Photography/Optimized/basslake.png",
+    "durl": "/Photography/Original/basslake.png"
   },
   {
-    "url": "/Photography/umbbird.png"
+    "url": "/Photography/Optimized/umbbird.png",
+    "durl": "/Photography/Original/umbbird.png"
   },
   {
-    "url": "/Photography/IMG_0794.JPG"
+    "url": "/Photography/Optimized/IMG_0794.JPG",
+    "durl": "/Photography/Original/IMG_0794.JPG"
   },
   {
-    "url": "Photography/IMG_2830.JPG"
+    "url": "Photography/Optimized/IMG_2830.JPG",
+    "durl": "Photography/Original/IMG_2830.JPG"
   },
   {
-    "url": "/Photography/IMG_1273.JPG"
+    "url": "/Photography/Optimized/IMG_1273.JPG",
+    "durl": "/Photography/Original/IMG_1273.JPG"
   },
   {
-    "url": "/Photography/IMG_1284.JPG"
+    "url": "/Photography/Optimized/IMG_1284.JPG",
+    "durl": "/Photography/Original/IMG_1284.JPG"
   },
   {
-    "url": "/Branding/background2.png"
+    "url": "/Branding/background2.png",
+    "durl": "/Branding/background2.png"
   },
   {
-    "url": "/Photography/IMG_0960.JPG"
+    "url": "/Photography/Optimized/IMG_0960.JPG",
+    "durl": "/Photography/Original/IMG_0960.JPG"
   },
   {
-    "url": "/Photography/IMG_2701.JPG"
+    "url": "/Photography/Optimized/IMG_2701.JPG",
+    "durl": "/Photography/Original/IMG_2701.JPG"
   },
   {
-    "url": "/Photography/IMG_1753.JPG"
+    "url": "/Photography/Optimized/IMG_1753.JPG",
+    "durl": "/Photography/Original/IMG_1753.JPG"
   },
   {
-    "url": "/Photography/IMG_1796.JPG"
+    "url": "/Photography/Optimized/IMG_1796.JPG",
+    "durl": "/Photography/Original/IMG_1796.JPG"
   },
   {
-    "url": "/Photography/IMG_1837.JPG"
+    "url": "/Photography/Optimized/IMG_1837.JPG",
+    "durl": "/Photography/Original/IMG_1837.JPG"
   },
   {
-    "url": "/Photography/IMG_2035.JPG"
+    "url": "/Photography/Optimized/IMG_2035.JPG",
+    "durl": "/Photography/Original/IMG_2035.JPG"
   }
 ]

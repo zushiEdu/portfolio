@@ -44,15 +44,21 @@ fetch('/Data/photos.json')
     .then(response => response.json())
     .then(images => {
         images.forEach((image) => {
+            let a = document.createElement('a');
+            a.download = "image-" + Date.now();
+            a.href = image.durl;
+
             let img = document.createElement('img');
             img.src = image.url;
             img.loading = "lazy";
+
+            a.appendChild(img)
             if (photosContainer1Height >= photosContainer2Height) {
                 photosContainer2Height += 1;
-                photosContainer2.appendChild(img);
+                photosContainer2.appendChild(a);
             } else {
                 photosContainer1Height += 1;
-                photosContainer1.appendChild(img);
+                photosContainer1.appendChild(a);
             }
         })
     });
