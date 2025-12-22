@@ -264,7 +264,7 @@ fetch('/Data/projects.json')
         let projectsNav = document.createElement('ul');
         projectsNav.id = 'projectsNav';
 
-        pageAmount = Math.ceil(projects.length / (rowAmount * 2));
+        pageAmount = Math.ceil(projectCounter / (rowAmount * 2));
 
         for (let k = 0; k < pageAmount; k++) {
             let listItem = document.createElement('li');

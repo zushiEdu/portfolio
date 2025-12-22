@@ -15,7 +15,7 @@
     "date": "2024-09-20",
     "thumb": "/Thumbnails/engineCover.png",
     "header": "/Headers/engineHeader.png",
-    "paragraph": "Since my inline 3 engine model project I wanted to design a new model engine that could run under some sort of energy other than a hand crank. I was unsure what energy to base my new engine model off of until I saw a video by PolyProject3D on YouTube. He has made a collection of 3D printed engines that all run off of compressed air. The specific engine that peaked my interest is the V8 model engine he made. \n\n The reason why his V8 model engine intrigued me the most was because of the intricate intake and exhaust manifolds he designed. The manifolds and the performance of the engine lead me to be reminded of the Lexus LFA due to its high revving nature and unique sound characteristic. Due to this I decided I would design my own version of the engine PolyProject3D made but in V10 form in inspiration from the LFA. I figured it would be the perfect project to learn how to manufacture more detailed and stress-enduring part using SLM printing. \n\n This project is quickly growing in scope as this engine is now be paired to an entire system of 3D printed drivetrain components to form an entire functioning(ish) model car. So far I have the engine connected to a transmission and a differential with the frame sitting on all around double-wishbone suspension.",
+    "paragraph": "Since my inline 3 engine model project I wanted to design a new model engine that could actually run without someone turning a crank. I was unsure what energy to base my new engine model off of until I saw a video by PolyProject3D on YouTube. He has made a collection of 3D printed engines that all run off of compressed air. The specific engine that peaked my interest is the V8 model engine he made. \n\n The reason why his V8 model engine intrigued me the most was because of the intricate intake and exhaust manifolds he designed. The manifolds and the performance of the engine lead me to be reminded of the Lexus LFA due to its high revving nature and unique sound characteristic. Due to this I decided I would design my own version of the engine PolyProject3D made but in V10 form in inspiration from the LFA. I figured it would be the perfect project to learn how to manufacture more detailed and stress-enduring part using SLM printing. \n\n This project is quickly growing in scope as this engine is now be paired to an entire system of 3D printed drivetrain components to form an entire functioning(ish) model car. So far I have the engine connected to a transmission and a differential with the frame sitting on all around double-wishbone suspension. I am not able to find affordable methods to manufacture my engine so I have stopped at assembling just the engine. The engine cranks and the valves rotate but not nearly smooth enough to run off of compressed air. I will proudly blame my Ender 3 for it's poor print qualities.",
     "links": [
       {
         "displayText": "OnShape",
@@ -70,7 +70,7 @@
     "date": "2024-05-13",
     "thumb": "/Thumbnails/24battle-bot.png",
     "header": "/Headers/24btlbotHeader.png",
-    "paragraph": "The battle bot I built for the 2024 season was designed off of a year of experience where I learnt everything from where to buy affordable fasteners to how to best design a frame to resist attack. The robot for the 2024 season was completely redesigned from the ground up to prioritize frame rigidity, value, and fairness first. I decided to consider value and fairness as integral aspects because I could transfer what I thought was fair into the parts I was tasked with buying for the 2024 season. I needed to make sure that the parts I decided to buy were easy to learn with, effective in battle bots, but also effective for other activities (i.e. drones). I also needed to ensure that the teams could fairly compete no matter what skill level and budget at hand. \n\nThe reason why this specifically spoke to me is because I felt that the 2023 season was unfair due to the wide range of budget, team sizes, and robot sizes. There were no standards in the 2023 season. There was also no defined scoring system which meant teams were blindly going into the competition not knowing how a winner would be decided. These were all issues that were remedied in the 2024 season. I supplied fasteners to whomever needed them, 3D printing parts for other people when I could, designed rules to consider all aspects of battle (as to deter boring metas from forming), and I generally helped/mentored around 10 teams with their bots. I felt I had a lot more fun in the 2024 season and I hope a lot of other people did too as that is how I would measure my success. \n\n My battle bot had the following specs:\n- 4 1/2\" saw blade\n- Drone motor driven by a D2822 ESC (weapon)\n- Dual 25GA-370 drive motors driven by an L298N\n- Arduino Uno\n- Bluetooth receiver (smartphone control)\n- 50mm computer fan for cooling\n- 4 18650 Lithium-Ion batteries",
+    "paragraph": "The battle bot I built for the 2024 season was designed off of a year of experience where I learnt everything from where to buy affordable fasteners to how to best design a frame to resist attack. The robot for the 2024 season was completely redesigned from the ground up to prioritize frame rigidity, value, and fairness first. I decided to consider value and fairness as integral aspects because I could transfer what I thought was fair into the parts I was tasked with buying for the 2024 season. I needed to make sure that the parts I decided to buy were easy to learn with, effective in battle bots, but also effective for other activities (i.e. drones). I also needed to ensure that the teams could fairly compete no matter what skill level and budget at hand. \n\nThe reason why this specifically spoke to me is because I felt that the 2023 season was unfair due to the wide range of budget, team sizes, and robot sizes. There were no standards in the 2023 season. There was also no defined scoring system which meant teams were blindly going into the competition not knowing how a winner would be decided. These were all issues that were remedied in the 2024 season. I supplied fasteners to whomever needed them, 3D printing parts for other people when I could, designed rules to consider all aspects of battle (as to deter boring metas from forming), and I generally helped/mentored around 10 teams with their bots. I felt I had a lot more fun in the 2024 season and I hope a lot of other people did too as that is how I would measure my success. \n\n My battle bot had the following specs:\n- 4 1/2\" saw blade\n- Drone motor driven by a D2822 ESC (weapon)\n- Dual 25GA-370 drive motors driven by an L298N\n- Arduino Uno\n- Bluetooth receiver (smartphone control)\n- 50mm computer fan for cooling\n- 4 easy to swap 18650 Lithium-Ion batteries",
     "links": [
       {
         "displayText": "OnShape",
@@ -86,7 +86,7 @@
     "date": "2023-04-03",
     "thumb": "/Thumbnails/clc.png",
     "header": "/Headers/circuitHeader.png",
-    "paragraph": "Circuit Layout Creator or CLC is an open source, circuit layout creation website. This project was inspired by DIYLC, with the main difference being that this web-app is compatible on all devices as long as they have a web browser and a physical keyboard. As this project is currently being supported by a small group of people and developed by a single developer, lots of features are being worked on. As it stands a basic circuit can be created from start to finish. The biggest change that needs to be made is an improvement to the current control scheme. Everything in this app is done through they keyboard which is the biggest suggested category of change given by the alpha-testers. The control system in the future will be able to integrate the mouse to click and drag components around.\n\nThe entire web-app is programmed in Javascript utilizing easy to read JSON files and custom component files to draw the components on the canvas.",
+    "paragraph": "Circuit Layout Creator or CLC is an open source, circuit layout creation website. This project was inspired by DIYLC, with the main difference being that this web-app is compatible on all devices as long as they have a web browser and a physical keyboard. As it stands a basic circuit can be created from start to finish. The biggest change that needs to be made is an improvement to the current control scheme. Everything in this app is done through they keyboard which is the biggest suggested category of change given by the alpha-testers. The control system in the future will be able to integrate the mouse to click and drag components around.\n\nThe entire web-app is programmed in Javascript utilizing easy to read JSON files and custom component files to draw the components on the canvas. The custom component footprint language means that contributors can easily add components to the library.",
     "links": [
       {
         "displayText": "Github",
@@ -118,7 +118,7 @@
       }
     ],
     "technologies": ["revit"],
-    "display": true
+    "display": false
   },
   {
     "title": "Automata",
@@ -126,7 +126,7 @@
     "date": "2022-10-27",
     "thumb": "/Thumbnails/autom.png",
     "header": "/Headers/automataheader.jpg",
-    "paragraph": "A 3 cylinder, dual overhead cam engine model built for an automata project in Gr11 using OnShape. This model was manufactured using a 3D printer, a laser cutter, and a lot of hot glue. This model operates with a hand-crank.",
+    "paragraph": "This is a 3 cylinder, dual overhead cam engine model built for an automata project in GR11 using OnShape. This model was manufactured using a 3D printer, a laser cutter, and a lot of hot glue. This model operates with a hand-crank. The requirement for the automata project was to build a simple cam based toy but I was able to convince my teacher to let me stretch the idea of the project to build an engine model.",
     "links": [
       {
         "displayText": "OnShape",
@@ -142,7 +142,7 @@
     "date": "2022-01-25",
     "thumb": "/Thumbnails/caved.png",
     "header": "/Headers/cavedheader.png",
-    "paragraph": "A retro 2D terminal remake of the game Minecraft made in Java. Crafting, mining, sleeping, building, saving/loading maps, and killing mobs are all things possible in this game.\n\n The map is procedurally generated and the enemies are driven by a basic AI algorithm. \n\n This was the first major game I created in Java which I built in my Grade 11 Computer Science class. ",
+    "paragraph": "Caved is a retro 2D terminal remake of the game Minecraft made in Java. Crafting, mining, sleeping, building, saving/loading maps, and killing mobs are all things possible in this game.\n\n The map is procedurally generated and the enemies are driven by a basic AI algorithm. \n\n This was the first major game I created in Java which I built in my Grade 11 Computer Science class. The map data is saved in a custom semi human readable format so that someone with basic education could modify their map. Caved will display the game in colour if the terminal the user used supported it, this results in an interesting gameplay experience.",
     "links": [
       {
         "displayText": "Github",
@@ -158,7 +158,7 @@
     "date": "2023-06-26",
     "thumb": "/Thumbnails/23battle-bot.png",
     "header": "/Headers/23btlbotHeader.png",
-    "paragraph": "Battle Bot for the HHSS 2022-2023 battle season. This bot uses a plastic spinner as its weapon, driven by an old weed wackers DC motor. The drive train is powered by 25GA-370 motors controlled through dual L288N drivers and an Arduino Uno receiving bluetooth control inputs. The components in this robot are air cooled by a 50mm computer fan.",
+    "paragraph": "This is the Battle Bot for the HHSS 2022-2023 battle season. This bot uses a plastic spinner as its weapon, driven by an old weed wackers DC motor. The drive train is powered by a pair of 25GA-370 motors controlled through dual L288N drivers and an Arduino Uno receiving bluetooth control inputs. The components in this robot are air cooled by a 50mm computer fan. There was not enough detailed CAD planning involved in this project as it was my groups first time building a complex electromechanical system. A lot of components were just stacked on top of whatever could have held something. We also could not find a suitable weapon to use so we just ended up throwing together a plastic spinner. A lot was learnt while making this robot.",
     "links": [
       {
         "displayText": "OnShape",
@@ -174,7 +174,7 @@
     "date": "2022-05-11",
     "thumb": "/Thumbnails/farm.png",
     "header": "/Headers/farmunationheader.jpg",
-    "paragraph": "Farmunation is a 2D farming game that was created because of my grandparents farm. The project took inspiration from games such as Farming Simulator and John Deere's: Harvest in the Heartland. The idea around this game was to give the player complete freedom and near limitless space for them to grow and develop their farm. Both Farming Simulator and Harvest in the Hearthland limit your map in some way. This game is not finished and still has a lot to complete.",
+    "paragraph": "Farmunation is a 2D farming game that was created because of my love for farming games. The project took inspiration from games such as Farming Simulator and John Deere's: Harvest in the Heartland. The idea around this game was to give the player complete freedom and near limitless space for them to grow and develop their farm. Both Farming Simulator and Harvest in the Hearthland limit your map in some way. This game is not finished and still has a lot to complete.\n\n In Farmunation you can buy equipment, seeds, fertilizer, and decoration. I stopped development of this game as I got frustrated with the way drawing to the screen works in Javascript and the inherit flaws with the language Javascript.",
     "links": [
       {
         "displayText": "Github",
@@ -202,7 +202,7 @@
       }
     ],
     "technologies": ["html", "css", "javascript"],
-    "display": true
+    "display": false
   },
   {
     "title": "DistroSys",
@@ -218,7 +218,7 @@
       }
     ],
     "technologies": ["html", "css", "javascript", "onshape", "arduino"],
-    "display": true
+    "display": false
   },
   {
     "title": "Indoor/Outdoor 2 Floor Go Kart Facility.",
@@ -234,7 +234,7 @@
       }
     ],
     "technologies": ["revit"],
-    "display": true
+    "display": false
   },
   {
     "title": "Urban Shelter",
@@ -250,13 +250,13 @@
       }
     ],
     "technologies": ["onshape"],
-    "display": true
+    "display": false
   },
   {
     "title": "Fire Fighting Maze Robot",
     "tldr": "Autonomous fire fighting robot.",
     "header": "/Headers/mazerbt.png",
-    "paragraph": "Made for my Grade 12 computer tech class using OnShape. Features a pair of ultrasonic sensors, an infrared sensor and a temperature sensor. All the sensors communicate to the Arduino which controls the wheels and pump using a L298N motor driver. I also built the maze that our class used for this project as tasked by my teacher. \n\n Additionally I learnt how to make an enclosure for the robot which both serves structural and aesthetic purposes which taught me how to better account for tolerances when 3D printing.",
+    "paragraph": "This robot was made for my Grade 12 computer tech class using OnShape. It features a pair of ultrasonic sensors, an infrared sensor and a temperature sensor. All the sensors communicate to the Arduino which controls the wheels and pump using a L298N motor driver. I also built the maze that our class used for this project as tasked by my teacher. \n\n Additionally I learnt how to make an enclosure for the robot which both serves structural and aesthetic purposes which taught me how to better account for tolerances when 3D printing. I also learnt how to implement a basic maze navivation algorithm.",
     "date": "2024-05-29",
     "thumb": "/Thumbnails/fireBot.png",
     "links": [
@@ -282,13 +282,13 @@
       }
     ],
     "technologies": ["revit"],
-    "display": true
+    "display": false
   },
   {
     "title": "Food Inc",
     "tldr": "Android clicker game.",
     "header": "/Headers/foodheader.png",
-    "paragraph": "I made this game for fun using the Unity game engine. I published this game on the Google Play Store on which it obtained many downloads. This was my first large-scale project supporting many operating systems and was updated to add more content numerous times.",
+    "paragraph": "I made this game for fun using the Unity game engine. I published this game on the Google Play Store on which it obtained many downloads. This was my first large-scale project supporting many operating systems and was updated to add more content numerous times.\n\n This game gives you the ability to buy different upgrades and evolve the food that you were producing. I used the popular game Egg Inc as heavy inspiration and as such lots of gameplay loops and styles are found in my game.",
     "date": "2021-01-17",
     "thumb": "/Thumbnails/food.png",
     "links": [
@@ -314,13 +314,13 @@
       }
     ],
     "technologies": ["html", "css", "javascript"],
-    "display": true
+    "display": false
   },
   {
     "title": "ecoConnect",
     "tldr": "Tool to find local produce.",
     "header": "/Headers/ecoheader.png",
-    "paragraph": "I made this tool for the 2023 Spring Hacks Hackathon. This tool uses your location to show a sorted list of curated local produce stores.",
+    "paragraph": "I made this tool for the 2023 Spring Hacks Hackathon. This tool uses your location to show a sorted list of curated local produce stores. Each business has a latitude and longitude stored in the database which is put into the Haversine formula to determine the rough distance to the user. I attempted to write a script that would automatically grab business data from Google Maps but I wanted to avoid having to pay for API credits. I also tried to make a web scraper to get data without paying for an API but I could not guarentee the quality of the data provided to the user.",
     "date": "2023-05-20",
     "thumb": "/Thumbnails/eco.png",
     "links": [
@@ -346,7 +346,7 @@
       }
     ],
     "technologies": ["html", "css", "javascript"],
-    "display": true
+    "display": false
   },
   {
     "title": "Rocketeer",
@@ -362,7 +362,7 @@
       }
     ],
     "technologies": ["java"],
-    "display": true
+    "display": false
   },
   {
     "title": "Calculator",
@@ -378,13 +378,13 @@
       }
     ],
     "technologies": ["html", "css", "javascript"],
-    "display": true
+    "display": false
   },
   {
     "title": "Ping Pong Ball Launcher",
     "tldr": "Fully automatic.",
-    "header": null,
-    "paragraph": null,
+    "header": "/Headers/launcherView2.png",
+    "paragraph": "In this project I designed a fully automatic ping pong ball launcher machine. The only thing that drives the machine is a single DC motor. The entire \"logic\" that fires ping pong balls is all mechanical. The motor rotates a gear with a linkage attached to it. The linkage pushes a shuttle back and forth in the left side of the slide. The slide resets and triggers the firing mechanism. The firing mechanism is wound up with a compression spring and triggered with a lever at the full back position of the slide. Ping pong balls are held in a simple 3D printed tube. The launcher was designed to be manufactured by a lazer cutter and a 3D printer allowing for cheap and easy construction.",
     "date": "2024-05-24",
     "thumb": "/Headers/ballLauncher.png",
     "links": [

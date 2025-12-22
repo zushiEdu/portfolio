@@ -106,6 +106,24 @@ section:hover ul{
     opacity: 1;
 }
 
+.noMarginBottom{
+    margin-bottom: 0;
+}
+
+.noMarginTop{
+    margin-top: 0;
+}
+
+.noMargin{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.listDot{
+    list-style-type:disc;
+    padding-left: 1em;
+}
+
 .leftPad{
     margin-left: 0.5em;
 }
