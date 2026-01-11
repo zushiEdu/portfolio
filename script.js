@@ -16,7 +16,7 @@ let featuredContainer = document.getElementById('featured');
 let photosContainer1 = document.getElementById('photoCol1');
 let photosContainer2 = document.getElementById('photoCol2');
 
-const featured = ["Filedex", "2024 Battle Bots", "Power Distribution Board", "Caved"]
+const featured = ["Filedex", "2024 Battle Bots", "Power Distribution Board", "Caved", "Business Card"]
 
 const urlParams = new URLSearchParams(window.location.search);
 const pageParam = urlParams.get('page');
@@ -37,7 +37,8 @@ const icons = new Map([
     ["unity", "unity.png"],
     ["unraid", "unraid.png"],
     ["sqlite", "sqlite.png"],
-    ["kicad", "kicad.png"]
+    ["kicad", "kicad.png"],
+    ["stm32", "stm32.png"]
 ]);
 
 fetch('/Data/photos.json')
