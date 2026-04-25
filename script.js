@@ -16,7 +16,7 @@ let featuredContainer = document.getElementById('featured');
 let photosContainer1 = document.getElementById('photoCol1');
 let photosContainer2 = document.getElementById('photoCol2');
 
-const featured = ["Filedex", "2024 Battle Bots", "Power Distribution Board", "Caved", "Business Card"]
+const featured = ["Filedex", "2024 Battle Bots", "Power Distribution Board", "Caved", "Business Card", "Fan Controller Board"]
 
 const urlParams = new URLSearchParams(window.location.search);
 const pageParam = urlParams.get('page');

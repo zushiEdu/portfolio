@@ -1,5 +1,15 @@
 [
   {
+    "title": "Fan Controller Board",
+    "tldr": "UofG Robotics Team Project",
+    "date": "2026-01-18",
+    "thumb": "/Thumbnails/fanboardthumb.jpeg",
+    "header": "/Headers/fanboardheader.png",
+    "paragraph": "The fan controller board monitors temperatures throughout the UGRTs rover. The board has 2 on board NTC probe headers and the ability to read temperature over CAN. The board can control 2 banks of daisy-chainable desktop fans through a standard connector. This board was designed to be compact and simple containing an STM32G0B1CET6. The PCB was designed using KiCad, produced by JLCPCB and soldered using a hotplate.",
+    "technologies": ["kicad"],
+    "display": true
+  },
+  {
     "title": "Power Distribution Board",
     "tldr": "UofG Robotics Team Project",
     "date": "2025-11-10",
