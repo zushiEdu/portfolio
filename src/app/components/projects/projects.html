@@ -1,0 +1,26 @@
+<div class="page" id="projects">
+  <h3 class="centered">Projects</h3>
+  <div class="projects-grid">
+    @for (row of visibleRows(); track $index) {
+      <div class="projects-row">
+        @for (project of row; track project.title) {
+          <div class="projects-cell">
+            <app-project-card [project]="project" />
+          </div>
+        }
+      </div>
+    }
+  </div>
+
+  <ul id="projectsNav">
+    @for (page of pageNumbers(); track page) {
+      <li>
+        <a
+          class="projectPagesNavText"
+          [style.textDecoration]="page === currentPage() ? 'underline' : 'none'"
+          (click)="goToPage(page)"
+        >{{ page }}</a>
+      </li>
+    }
+  </ul>
+</div>

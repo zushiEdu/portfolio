@@ -1,0 +1,342 @@
+* {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    segoe ui,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    open sans,
+    helvetica neue,
+    sans-serif;
+  color: #fbfaf5;
+}
+
+body {
+  background-color: #000814;
+  background-image: url("/Branding/background2.png");
+  background-position: center;
+  overflow: visible;
+}
+
+a {
+  text-decoration: none;
+}
+
+td {
+  padding: 0.25em;
+  width: 50%;
+  vertical-align: top;
+}
+
+h3 {
+  line-height: 1.25em;
+}
+
+section {
+  text-align: center;
+  position: relative;
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  line-height: 1em;
+}
+
+#mainContent {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  height: fit-content;
+  min-height: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+section ul {
+  display: none;
+}
+
+.contentThumb {
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.moreInfoHeader {
+  aspect-ratio: 3;
+  object-fit: cover;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.techIcon {
+  height: 1.3em;
+  display: inline;
+  aspect-ratio: 1;
+  object-fit: cover;
+  position: relative;
+  top: 0.3em;
+  margin-left: 0.3em;
+}
+
+.cardInfo {
+  padding: 0.5em;
+  background-color: #2a2a2a;
+  flex: 1;
+}
+
+.miniTitle {
+  font-size: 1em;
+  line-height: 1.1em;
+  margin: 0;
+}
+
+.tldr {
+  margin: 0;
+  line-height: 1.1em;
+}
+
+#projects .miniTitle,
+#home .miniTitle,
+#resume .miniTitle {
+  margin: 0;
+}
+
+.noMarginBottom {
+  margin-bottom: 0;
+}
+
+.noMarginTop {
+  margin-top: 0;
+}
+
+.noMargin {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.listDot {
+  list-style-type: disc;
+  padding-left: 1em;
+}
+
+.leftPad {
+  margin-left: 0.5em;
+}
+
+.leftPadBig {
+  margin-left: 1.5em;
+}
+
+.frosted {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  mask: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.nav {
+  width: 30%;
+  padding: 1em;
+}
+
+.content {
+  position: relative;
+  width: 70%;
+  padding: 1em;
+  padding-top: 6.85em;
+}
+
+.page {
+  overflow-y: auto;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.page h2 {
+  margin-bottom: 0;
+}
+
+.page h3 {
+  margin-bottom: 0;
+}
+
+.page h4 {
+  margin-bottom: 0;
+}
+
+.pdf {
+  aspect-ratio: 8.5/11;
+}
+
+#resume h3,
+#projects h3,
+#home h3 {
+  margin-bottom: 1em;
+}
+
+.centered {
+  text-align: center;
+}
+
+#projectsNav li {
+  display: inline;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#projectsNav {
+  display: flex;
+  justify-content: center;
+}
+
+#photography table tr td img {
+  width: 100%;
+}
+
+.projectPagesNavText:hover {
+  cursor: pointer;
+}
+
+#photoCol1 {
+  vertical-align: top;
+  padding: 0;
+  padding-right: 0.5em;
+}
+
+#photoCol2 {
+  vertical-align: top;
+  padding: 0;
+}
+
+#photoCol1 img,
+#photoCol2 img {
+  padding-bottom: 0.5em;
+}
+
+#about-me p {
+  text-align: left;
+  line-height: 1.1em;
+}
+
+.intro {
+  display: flow-root;
+}
+
+.intro p {
+  margin-bottom: 0;
+}
+
+.education {
+  margin-top: 0.5em;
+}
+
+.iconList {
+  display: flex;
+}
+
+.aboutImg {
+  width: 15em;
+  float: left;
+  margin-right: 1em;
+}
+
+.iconListItem {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.iconListItem img {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+@media only screen and (max-width: 1024px) {
+  #mainContent {
+    width: 100%;
+    padding: 0;
+    display: block;
+  }
+
+  #about-me p img {
+    width: 50%;
+  }
+
+  .frosted {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    mask: none;
+  }
+
+  .nav {
+    margin: auto;
+    width: 80%;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .content {
+    margin: auto;
+    width: 80%;
+    padding-top: 0;
+  }
+
+  #projectsNav li a {
+    font-size: 1.5em;
+  }
+
+  .miniTitle {
+    font-size: 1em;
+    line-height: 1em;
+    margin: 0;
+  }
+
+  .nav ul li a {
+    font-size: 1.25em;
+  }
+
+  .nav p {
+    font-size: 1.5em;
+  }
+
+  .leftPad {
+    padding-left: 1em;
+  }
+}
