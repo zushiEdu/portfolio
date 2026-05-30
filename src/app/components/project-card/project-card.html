@@ -1,0 +1,16 @@
+<section>
+  @if (project.thumb) {
+    <img class="contentThumb" [src]="project.thumb" loading="lazy" fetchpriority="high" />
+  }
+  <div class="cardInfo">
+    @if (project.title) {
+      <h3 class="miniTitle">{{ project.title }}</h3>
+    }
+    @if (project.tldr) {
+      <p class="tldr">{{ project.tldr }}</p>
+    }
+    @if (project.paragraph) {
+      <a class="underlined" [routerLink]="['/projects', project.title.replaceAll(' ', '_')]">More</a>
+    }
+  </div>
+</section>

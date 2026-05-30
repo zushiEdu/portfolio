@@ -1,7 +1,7 @@
 * {
   font-family:
-    -apple-systrem,
-    BlinkMacSystremFont,
+    -apple-system,
+    BlinkMacSystemFont,
     segoe ui,
     Roboto,
     Oxygen,
@@ -27,25 +27,19 @@ a {
 td {
   padding: 0.25em;
   width: 50%;
+  vertical-align: top;
 }
 
 h3 {
   line-height: 1.25em;
 }
 
-.fullWidth {
-  width: 100%;
-}
-
-.row {
-  padding: 0;
-}
-
 section {
-  line-height: 0;
   text-align: center;
   position: relative;
   background-color: #333333;
+  display: flex;
+  flex-direction: column;
 }
 
 p {
@@ -74,12 +68,7 @@ ul {
 }
 
 section ul {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: auto;
-  opacity: 0;
+  display: none;
 }
 
 .contentThumb {
@@ -93,7 +82,6 @@ section ul {
   aspect-ratio: 3;
   object-fit: cover;
   width: 100%;
-  /* border-radius:1em; */
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -108,12 +96,27 @@ section ul {
   margin-left: 0.3em;
 }
 
-section:hover .contentThumb {
-  opacity: 0.1;
+.cardInfo {
+  padding: 0.5em;
+  background-color: #2a2a2a;
+  flex: 1;
 }
 
-section:hover ul {
-  opacity: 1;
+.miniTitle {
+  font-size: 1em;
+  line-height: 1.1em;
+  margin: 0;
+}
+
+.tldr {
+  margin: 0;
+  line-height: 1.1em;
+}
+
+#projects .miniTitle,
+#home .miniTitle,
+#resume .miniTitle {
+  margin: 0;
 }
 
 .noMarginBottom {
@@ -182,13 +185,8 @@ section:hover ul {
 .page {
   overflow-y: auto;
   z-index: 0;
-  display: none;
   top: 0;
   bottom: 0;
-}
-
-.page p {
-  line-height: 1em;
 }
 
 .page h2 {
@@ -203,34 +201,17 @@ section:hover ul {
   margin-bottom: 0;
 }
 
-.page:target {
-  left: 0vw;
-  z-index: 1;
-  visibility: inherit;
-  display: block;
-}
-
 .pdf {
   aspect-ratio: 8.5/11;
 }
 
-#projects h3 {
-  margin-bottom: 1em;
-}
-
+#resume h3,
+#projects h3,
 #home h3 {
   margin-bottom: 1em;
 }
 
 .centered {
-  text-align: center;
-}
-
-#resume h3 {
-  margin-bottom: 1em;
-}
-
-#projects p {
   text-align: center;
 }
 
@@ -264,22 +245,9 @@ section:hover ul {
   padding: 0;
 }
 
-#photoCol1 img {
-  padding-bottom: 0.5em;
-}
-
+#photoCol1 img,
 #photoCol2 img {
   padding-bottom: 0.5em;
-}
-
-#awards ul li {
-  list-style-type: disc;
-  margin-left: 1em;
-}
-
-#awards ul li p {
-  margin: 0.25em;
-  text-align: left;
 }
 
 #about-me p {
@@ -287,8 +255,16 @@ section:hover ul {
   line-height: 1.1em;
 }
 
-#rights {
-  text-align: left;
+.intro {
+  display: flow-root;
+}
+
+.intro p {
+  margin-bottom: 0;
+}
+
+.education {
+  margin-top: 0.5em;
 }
 
 .iconList {
@@ -352,16 +328,6 @@ section:hover ul {
     margin: 0;
   }
 
-  #featured tr section ul {
-    width: 90%;
-    top: 35%;
-  }
-
-  #projects tr section ul {
-    width: 90%;
-    top: 35%;
-  }
-
   .nav ul li a {
     font-size: 1.25em;
   }
@@ -370,15 +336,7 @@ section:hover ul {
     font-size: 1.5em;
   }
 
-  #rights {
-    font-size: 1em;
-  }
-
   .leftPad {
     padding-left: 1em;
-  }
-
-  .tldr {
-    margin-top: 0.5em;
   }
 }

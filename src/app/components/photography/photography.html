@@ -1,0 +1,28 @@
+<div class="page centered" id="photography">
+  <h3>Photography</h3>
+  <p>
+    All photos are original. <br />Please contact me if you would like
+    permission to use any of my media. <br />Click on an image to
+    download the original high quality version of it. <br />
+    <br />
+    All photos are taken on a stock iPhone 15 Pro
+  </p>
+  <table>
+    <tr>
+      <td id="photoCol1">
+        @for (photo of col1(); track photo.url) {
+          <a [href]="photo.durl" download>
+            <img [src]="photo.url" loading="lazy" />
+          </a>
+        }
+      </td>
+      <td id="photoCol2">
+        @for (photo of col2(); track photo.url) {
+          <a [href]="photo.durl" download>
+            <img [src]="photo.url" loading="lazy" />
+          </a>
+        }
+      </td>
+    </tr>
+  </table>
+</div>

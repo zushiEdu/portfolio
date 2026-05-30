@@ -1,0 +1,23 @@
+<div class="page" id="home">
+  <h3 class="centered">Home</h3>
+  <h3>Hello 👋</h3>
+  <p>
+    I'm Ethan, an engineer with a passion for building things. As a
+    second-year Computer Engineering student at the University of
+    Guelph, I love turning ideas into tangible solutions.
+  </p>
+  <h3>Featured Projects</h3>
+  <div id="featured">
+    <div class="featured-grid">
+      @for (chunk of featuredChunks(); track $index) {
+        <div class="featured-row">
+          @for (project of chunk; track project.title) {
+            <div class="featured-cell">
+              <app-project-card [project]="project" />
+            </div>
+          }
+        </div>
+      }
+    </div>
+  </div>
+</div>
