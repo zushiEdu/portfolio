@@ -1,0 +1,425 @@
+[
+  {
+    "title": "Fan Controller Board",
+    "tldr": "UofG Robotics Team Project",
+    "date": "2026-01-18",
+    "thumb": "/Thumbnails/fanboardthumb.jpeg",
+    "header": "/Headers/fanboardheader.png",
+    "paragraph": "The fan controller board monitors temperatures throughout the UGRTs rover. The board has 2 on board NTC probe headers and the ability to read temperature over CAN. The board can control 2 banks of daisy-chainable desktop fans through a standard connector. This board was designed to be compact and simple containing an STM32G0B1CET6. The PCB was designed using KiCad, produced by JLCPCB and soldered using a hotplate.",
+    "technologies": ["kicad"],
+    "display": true
+  },
+  {
+    "title": "Power Distribution Board",
+    "tldr": "UofG Robotics Team Project",
+    "date": "2025-11-10",
+    "thumb": "/Thumbnails/pdb.png",
+    "header": "/Headers/pdbHeader.jpg",
+    "paragraph": "The power distribution board is a reliable and organized solution for managing power delivery to the UofG's rover's modules. The board was designed in KiCad, and supports and allocates power to various modules including some notable ones such as the Light, Arm, Fan, and Antenna boards. Each output was designed with its unique requirements in mind, ensuring correct routing and current capacity across all connections. \n\n A significant aspect of this project was the collaboration with team members, particularly with the mechanical subsection. Clear communication ensured the PCB's footprint met the constraints of the overall assembly. \n\n The board incorporates practices, such as dedicated ideal fuse protection for the major outputs, optimal power trace sizing, and connector orientations. Design decisions were influenced by past designs and collaboration with the team. \n\n A major struggle with this project was configuring the board in such a way that the converters would be close to the outputs but also fit within the board size requirements. I ended up deciding to mount the converters on top of the board on a tray. This is why there is a higher than normal count of connectors on the board. ",
+    "technologies": ["onshape", "kicad"],
+    "display": true
+  },
+  {
+    "title": "Business Card",
+    "tldr": "STM32 Game Card",
+    "date": "2026-01-10",
+    "thumb": "/Thumbnails/bcFront.jpg",
+    "header": "/Headers/bcHeader.png",
+    "paragraph": "This is my business card. My business card is a PCB, using the STM32F103C8T6 microcontroller as it's brain. \n\nThe STM32 is connected to 6 push buttons and a 12x12 LED matrix. The push buttons and LED matrix are laid out to look like a GameBoy Classic. \n\nThe business card has a collection of common engineering related symbols, values, equations, and footprints on the back. The STM32 is programmed to simulate John Conway's Game of Life. \n\nThe push buttons allow you to control the game board and the power of the system. The Up/Down/Left/Right buttons move the cursor around when in edit mode. While in edit mode, a cursor will flash and the user can press B to toggle the selected pixel. To Pause/Play the game, the user can press A. While the game is paused the user can edit the board. \n\nSome cool patterns are printed across the front of the PCB. The QR code to my portfolio, and some contact info is also on the front of the PCB. \n\n This project was inspired by Mixtela's StyloCard.",
+    "links": [
+      {
+        "displayText": "GitHub",
+        "url": "https://github.com/zushiEdu/BusinessCard"
+      }
+    ],
+    "technologies": ["stm32", "kicad"],
+    "display": true
+  },
+  {
+    "title": "V10 Pneumatic Engine",
+    "tldr": "A model V10 engine that runs off of compressed air.",
+    "date": "2024-09-20",
+    "thumb": "/Thumbnails/engineCover.png",
+    "header": "/Headers/engineHeader.png",
+    "paragraph": "Since my inline 3 engine model project I wanted to design a new model engine that could actually run without someone turning a crank. I was unsure what energy to base my new engine model off of until I saw a video by PolyProject3D on YouTube. He has made a collection of 3D printed engines that all run off of compressed air. The specific engine that peaked my interest is the V8 model engine he made. \n\n The reason why his V8 model engine intrigued me the most was because of the intricate intake and exhaust manifolds he designed. The manifolds and the performance of the engine lead me to be reminded of the Lexus LFA due to its high revving nature and unique sound characteristic. Due to this I decided I would design my own version of the engine PolyProject3D made but in V10 form in inspiration from the LFA. I figured it would be the perfect project to learn how to manufacture more detailed and stress-enduring part using SLM printing. \n\n This project is quickly growing in scope as this engine is now be paired to an entire system of 3D printed drivetrain components to form an entire functioning(ish) model car. So far I have the engine connected to a transmission and a differential with the frame sitting on all around double-wishbone suspension. I am not able to find affordable methods to manufacture my engine so I have stopped at assembling just the engine. The engine cranks and the valves rotate but not nearly smooth enough to run off of compressed air. I will proudly blame my Ender 3 for it's poor print qualities.",
+    "links": [
+      {
+        "displayText": "OnShape",
+        "url": "https://cad.onshape.com/documents/53da988791f59355cf7d8db7/w/781ae9665a3aab0ba98f85d1/e/cfb4efc1f7ba104ccf16797a?renderMode=0&uiState=6761c096e7632109579b4162"
+      }
+    ],
+    "technologies": ["onshape"],
+    "display": true
+  },
+  {
+    "title": "BasicMessanger",
+    "tldr": "Self hosted basic messaging app",
+    "date": "2025-05-21",
+    "thumb": "/Thumbnails/basicMessanger.png",
+    "header": "",
+    "paragraph": "BasicMessanger is a basic messaging web app. The front end is built with HTML, CSS, and JavaScript which makes requests to the backend REST API. The API is built in Golang using MariaDB to store messages. The server which runs the API runs on my self built linux Unraid machine in a docker container that automatically pulls docker images from the Github image. Images are automatically built with Github actions upon every commit. The learning goals of this project were to learn Golang, and SQL in a useful context.\n\nThere is no web-app for this project due to home network security concerns.",
+    "links": [
+      {
+        "displayText": "Github",
+        "url": "https://github.com/zushiEdu/basicmessanger"
+      }
+    ],
+    "technologies": [
+      "html",
+      "css",
+      "javascript",
+      "unraid",
+      "golang",
+      "mariadb"
+    ],
+    "display": true
+  },
+  {
+    "title": "Filedex",
+    "tldr": "Semantic file search engine",
+    "date": "2025-09-10",
+    "thumb": "/Thumbnails/filedex.png",
+    "header": "",
+    "paragraph": "*** About *** \nFiledex is a semantic file searching tool. Filedex is powered by Gemma3 using different models for different tasks. Model 1b is used for creating relations between tags. Model 4b is used for identifying tags for text files. Model 12b is used for identifying tags for image/PDF files.\n\nTags, relations, and directories are stored in SQLite.\n*** Usage ***\nFiledex needs to be told what folders to index. This way you have control over what you would like to be indexed. In the main menu you need to select 2. Add a directory to indexer to add a directory. To remove directories from the indexer select 3. Remove a directory from indexer. Currently if you remove a directory the related tags and information will not be removed. This prevents broken links from being introduced into the database. The justification behind this is that the relations made while tagging a folder might present better search results for unrelated folders/files.\n\nOnce you have added directories to Filedex you need to start an indexing job. To do this select 4. Start indexing job. Once you have selected this, you can not restart the task or cancel it without restarting the program. A notification will be sent to the console once the indexing is done. The indexing may take a long time depending on hardware and amount of files within the directories.\n\nFinally, once the indexer is done, select 1. Search to search. Filedex will try its best to relate your keyword(s) to files it has seen. Search results will vary from machine to machine and from run to run. This is because results from the LLM used is fairly random. The search tool is limited to 20 results. The results will automatically be sorted from most relevant to least. The relevancy is identified by the LLM so accuracy may be poor.\n\nTo reset the database:\n    - Delete the file named metadata.db.\n    - Duplicate the file named metadataE.db.\n    - Rename the duplicate file to metadata.db.\nIf there is an issue with resetting the database, re-clone the repository.\n*** Supported File Formats ***\n.txt .pdf .png .jpg\nSupport for HTML, CSS, XML, JS, and other plain text file formats will be added in the future.\n*** Demo ***\nThe picture of the folder which was used for the demo can be seen on the repository for this project. The picture contains a folder with various images, filenames are gibberish showing Filedex capabilities. Notice that the filenames are unrelated to the images. The images were sourced from Pexels.\n ** Search 1 **\nThe search corgi resulted in:\n1 - \\Users\\Ethan\\Desktop\\test\\pexels-gilberto-reyes-259461-825949.jpg (picture of dog with brown headband)\n2 - \\Users\\Ethan\\Desktop\\test\\pexels-hnoody93-58997.jpg (corgi)\n3 - \\Users\\Ethan\\Desktop\\test\\pexels-lum3n-44775-406014.jpg (beige dog head peeking out)\n4 - \\Users\\Ethan\\Desktop\\test\\pexels-pixabay-57416.jpg (orange cat licking paw)\n5 - \\Users\\Ethan\\Desktop\\test\\pexels-lina-1741205.jpg (orange cat with red bandana)\n\nAs we can see the results are generally related to the search for corgi. The only result that should have came up that did not was the picture of the 2 puppies. At the bottom of the list was results for cats which we can assume was related by a common tag like pet or animal. Because the link is indirect, the results popped up lower in the list.\n ** Search 2 **\nThe search sports car resulted in:\n1 - \\Users\\Ethan\\Desktop\\test\\pexels-alex-amorales-321095-909907.jpg (Audi)\n2 - \\Users\\Ethan\\Desktop\\test\\pexels-kelvin809-1519192.jpg (Hyundai)\n3 - \\Users\\Ethan\\Desktop\\test\\pexels-mayday-1545743.jpg (Audi)\n4 - \\Users\\Ethan\\Desktop\\test\\pexels-mikebirdy-170811.jpg (BMW)\n5 - \\Users\\Ethan\\Desktop\\test\\pexels-nordic-overdrive-202768-627678.jpg (Old Sporty Car)\n6 - \\Users\\Ethan\\Desktop\\test\\pexels-peely-712618.jpg (Classic Car)\n7 - \\Users\\Ethan\\Desktop\\test\\pexels-pixabay-210019.jpg (Alfa Romeo)\n8 - \\Users\\Ethan\\Desktop\\test\\pexels-zvolskiy-1637859.jpg (Alfa Romeo)\n\nAs we can see the results are generally related to the search for sports car. All the pictures of cars in the test folder came up as results.\nThe only result which was strange was the Hyundai picture. This picture appeared higher up in the list than most of the actual sports car pictures. This picture may have tags related to it invalidly by the LLM that make it appear high up in results. Upon searching for other car related search terms that the Hyundai picture vaguely connects to, the picture consistently appears too high up. This test demonstrates one of the flaws with Filedex.\n *** Future Plans ***\n   - Add the ability to reset the database from within the menu\n   - Add the ability to change the limit of search results\n   - Add the ability to customize the models used for each LLM task\n   - Add the ability to visualize the relation database\n   - Add MacOSX and Linux executables\n",
+    "links": [
+      {
+        "displayText": "Github",
+        "url": "https://github.com/zushiEdu/filedex"
+      }
+    ],
+    "technologies": ["golang", "sqlite"],
+    "display": true
+  },
+  {
+    "title": "2024 Battle Bots",
+    "tldr": "Build for the 2023-2024 HHSS battle bots season.",
+    "date": "2024-05-13",
+    "thumb": "/Thumbnails/24battle-bot.png",
+    "header": "/Headers/24btlbotHeader.png",
+    "paragraph": "The battle bot I built for the 2024 season was designed off of a year of experience where I learnt everything from where to buy affordable fasteners to how to best design a frame to resist attack. The robot for the 2024 season was completely redesigned from the ground up to prioritize frame rigidity, value, and fairness first. I decided to consider value and fairness as integral aspects because I could transfer what I thought was fair into the parts I was tasked with buying for the 2024 season. I needed to make sure that the parts I decided to buy were easy to learn with, effective in battle bots, but also effective for other activities (i.e. drones). I also needed to ensure that the teams could fairly compete no matter what skill level and budget at hand. \n\nThe reason why this specifically spoke to me is because I felt that the 2023 season was unfair due to the wide range of budget, team sizes, and robot sizes. There were no standards in the 2023 season. There was also no defined scoring system which meant teams were blindly going into the competition not knowing how a winner would be decided. These were all issues that were remedied in the 2024 season. I supplied fasteners to whomever needed them, 3D printing parts for other people when I could, designed rules to consider all aspects of battle (as to deter boring metas from forming), and I generally helped/mentored around 10 teams with their bots. I felt I had a lot more fun in the 2024 season and I hope a lot of other people did too as that is how I would measure my success. \n\n My battle bot had the following specs:\n- 4 1/2\" saw blade\n- Drone motor driven by a D2822 ESC (weapon)\n- Dual 25GA-370 drive motors driven by an L298N\n- Arduino Uno\n- Bluetooth receiver (smartphone control)\n- 50mm computer fan for cooling\n- 4 easy to swap 18650 Lithium-Ion batteries",
+    "links": [
+      {
+        "displayText": "OnShape",
+        "url": "https://cad.onshape.com/documents/6403fa02ac086c170fbd5848/w/d91e60e6e3e1fa026ac96b9c/e/3cfb50852aa6d2020ada619e?renderMode=0&uiState=65367b3624e5ce05edde47b2"
+      }
+    ],
+    "technologies": ["onshape", "arduino"],
+    "display": true
+  },
+  {
+    "title": "Circuit Layout Creator",
+    "tldr": "Web app to create perf-board representations.",
+    "date": "2023-04-03",
+    "thumb": "/Thumbnails/clc.png",
+    "header": "/Headers/circuitHeader.png",
+    "paragraph": "Circuit Layout Creator or CLC is an open source, circuit layout creation website. This project was inspired by DIYLC, with the main difference being that this web-app is compatible on all devices as long as they have a web browser and a physical keyboard. As it stands a basic circuit can be created from start to finish. The biggest change that needs to be made is an improvement to the current control scheme. Everything in this app is done through they keyboard which is the biggest suggested category of change given by the alpha-testers. The control system in the future will be able to integrate the mouse to click and drag components around.\n\nThe entire web-app is programmed in Javascript utilizing easy to read JSON files and custom component files to draw the components on the canvas. The custom component footprint language means that contributors can easily add components to the library.",
+    "links": [
+      {
+        "displayText": "Github",
+        "url": "https://github.com/zushiEdu/circuit-layout-creator"
+      },
+      {
+        "displayText": "Devpost",
+        "url": "https://devpost.com/software/circuit-layout-creator"
+      },
+      {
+        "displayText": "WebApp",
+        "url": "https://circuit-creator.netlify.app/"
+      }
+    ],
+    "technologies": ["html", "css", "javascript"],
+    "display": true
+  },
+  {
+    "title": "Tech Design Starter House",
+    "tldr": "Starter home designed in Gr11 Tech Design.",
+    "date": "2023-01-18",
+    "thumb": "/Thumbnails/strHouse.png",
+    "header": "/Headers/househeader.png",
+    "paragraph": "Average starter house designed with a maximum 2500sq ft restriction. The design of this house maintains a set of defined colors and materials throughout appliances, furniture and building materials. This house was designed in Gr11 tech design using Revit.",
+    "links": [
+      {
+        "displayText": "Full PDF",
+        "url": "https://drive.google.com/file/d/1gG-xrhUi0TOF__Ypgh2d96JAMIrp12KV/view?usp=share_link"
+      }
+    ],
+    "technologies": ["revit"],
+    "display": false
+  },
+  {
+    "title": "Automata",
+    "tldr": "Inline 3 model engine.",
+    "date": "2022-10-27",
+    "thumb": "/Thumbnails/autom.png",
+    "header": "/Headers/automataheader.jpg",
+    "paragraph": "This is a 3 cylinder, dual overhead cam engine model built for an automata project in GR11 using OnShape. This model was manufactured using a 3D printer, a laser cutter, and a lot of hot glue. This model operates with a hand-crank. The requirement for the automata project was to build a simple cam based toy but I was able to convince my teacher to let me stretch the idea of the project to build an engine model.",
+    "links": [
+      {
+        "displayText": "OnShape",
+        "url": "https://cad.onshape.com/documents/fb672b899105e8fe2cccd16c/w/00d0be8d5cafd92ae1b535e8/e/181aaa921fab5f379f3ec892?renderMode=0&uiState=6761d12b3cd3db00f60b5a3d"
+      }
+    ],
+    "technologies": ["onshape"],
+    "display": true
+  },
+  {
+    "title": "Caved",
+    "tldr": "2D Remake of Minecraft.",
+    "date": "2022-01-25",
+    "thumb": "/Thumbnails/caved.png",
+    "header": "/Headers/cavedheader.png",
+    "paragraph": "Caved is a retro 2D terminal remake of the game Minecraft made in Java. Crafting, mining, sleeping, building, saving/loading maps, and killing mobs are all things possible in this game.\n\n The map is procedurally generated and the enemies are driven by a basic AI algorithm. \n\n This was the first major game I created in Java which I built in my Grade 11 Computer Science class. The map data is saved in a custom semi human readable format so that someone with basic education could modify their map. Caved will display the game in colour if the terminal the user used supported it, this results in an interesting gameplay experience.",
+    "links": [
+      {
+        "displayText": "Github",
+        "url": "https://github.com/zushiEdu/Caved"
+      }
+    ],
+    "technologies": ["java"],
+    "display": true
+  },
+  {
+    "title": "2023 Battle Bots",
+    "tldr": "Build for the 2022-2023 HHSS battle bots season.",
+    "date": "2023-06-26",
+    "thumb": "/Thumbnails/23battle-bot.png",
+    "header": "/Headers/23btlbotHeader.png",
+    "paragraph": "This is the Battle Bot for the HHSS 2022-2023 battle season. This bot uses a plastic spinner as its weapon, driven by an old weed wackers DC motor. The drive train is powered by a pair of 25GA-370 motors controlled through dual L288N drivers and an Arduino Uno receiving bluetooth control inputs. The components in this robot are air cooled by a 50mm computer fan. There was not enough detailed CAD planning involved in this project as it was my groups first time building a complex electromechanical system. A lot of components were just stacked on top of whatever could have held something. We also could not find a suitable weapon to use so we just ended up throwing together a plastic spinner. A lot was learnt while making this robot.",
+    "links": [
+      {
+        "displayText": "OnShape",
+        "url": "https://cad.onshape.com/documents/544fbc1eaf97fb38b2cc1181/w/b038ccf2b9b97ac63344c1d3/e/d2ab5332e97499c1402bfaf2?renderMode=0&uiState=6537cbbdbafa29274aefedf9"
+      }
+    ],
+    "technologies": ["onshape", "arduino"],
+    "display": true
+  },
+  {
+    "title": "Farmunation",
+    "tldr": "2D, Javascript, Farming Game.",
+    "date": "2022-05-11",
+    "thumb": "/Thumbnails/farm.png",
+    "header": "/Headers/farmunationheader.jpg",
+    "paragraph": "Farmunation is a 2D farming game that was created because of my love for farming games. The project took inspiration from games such as Farming Simulator and John Deere's: Harvest in the Heartland. The idea around this game was to give the player complete freedom and near limitless space for them to grow and develop their farm. Both Farming Simulator and Harvest in the Hearthland limit your map in some way. This game is not finished and still has a lot to complete.\n\n In Farmunation you can buy equipment, seeds, fertilizer, and decoration. I stopped development of this game as I got frustrated with the way drawing to the screen works in Javascript and the inherit flaws with the language Javascript.",
+    "links": [
+      {
+        "displayText": "Github",
+        "url": "https://github.com/zushiEdu/Farmunation"
+      },
+      {
+        "displayText": "WebApp",
+        "url": "https://farmunation.netlify.app/"
+      }
+    ],
+    "technologies": ["html", "css", "javascript"],
+    "display": true
+  },
+  {
+    "title": "The Reference Library",
+    "tldr": "Personal disorganized reference library.",
+    "date": "2023-03-19",
+    "thumb": "/Thumbnails/hodge.png",
+    "header": "/Headers/hodgeheader.png",
+    "paragraph": "This website contains most of the links and references I've used in school projects starting from March 19th 2023. This website was created for fun after the shear amount of references I had to include in one of my projects. I had the thought that maybe it would be funny to have a website I can reference for every school project that would include everything I have ever read/used. That way I would never have to create a reference list ever again. Plus if any person asks how I know the random facts I know, I can actually point them to somewhere. This website is purely for fun and was used as a website to improve my Javascript and CSS skills. All the links on this website are sorted alphabetically and can be simplified.",
+    "links": [
+      {
+        "displayText": "WebApp",
+        "url": "https://zushiedu.github.io/references/"
+      }
+    ],
+    "technologies": ["html", "css", "javascript"],
+    "display": false
+  },
+  {
+    "title": "DistroSys",
+    "tldr": "Kinda a Copy of Amazon.",
+    "header": "/Headers/distroHeader.png",
+    "paragraph": "DistroSys is a project that involves a picking robot and server-run software which manage user purchases and robot dispatching. This project was made for my 12U Computer Science class. I used NodeJs for all of the backend software which communicates over WiFi to the ESP32 on the picking robot. The inspiration behind this project is the distribution centre I used to work at. I've always seen opportunities where automation could take place of a human role for safety and efficiency which is why I wanted to develop a solution of my own.",
+    "date": "2023-12-29",
+    "thumb": "/Thumbnails/distro.png",
+    "links": [
+      {
+        "displayText": "Github",
+        "url": "https://github.com/zushiEdu/distroSys"
+      }
+    ],
+    "technologies": ["html", "css", "javascript", "onshape", "arduino"],
+    "display": false
+  },
+  {
+    "title": "Indoor/Outdoor 2 Floor Go Kart Facility.",
+    "tldr": "Warehouse converted to go kart track.",
+    "header": "/Headers/kartHeader.png",
+    "paragraph": "This facility was made in my Grade 12 tech design class using Revit. The facility contains a two story, indoor and outdoor track with multiple configurations. It features a second floor viewing loft, a machine shop for maintenance and a lobby. For floor plans and more 3d views/information, check out the PFD.",
+    "date": "2024-04-28",
+    "thumb": "/Thumbnails/kart.png",
+    "links": [
+      {
+        "displayText": "PDF",
+        "url": "https://drive.google.com/file/d/1sUmH5NT5s2S_HT_ar92Id2AFVNsVzVOM/view?usp=sharing"
+      }
+    ],
+    "technologies": ["revit"],
+    "display": false
+  },
+  {
+    "title": "Urban Shelter",
+    "tldr": "Modern urban shelter made in Grade 12 Tech Design.",
+    "header": "/Headers/shelterHeader.png",
+    "paragraph": "An urban shelter made in my Grade 12 tech design class using Onshape. Features an eco-friendly water recovery system and a minimalist, pet-friendly water fountain. It's key design feature is the back wall with a grating to allow for natural light to pass through but still block wind. \n\nThe roof lofts from an arch into a ripple shape in the back to both direct water naturally and look pleasing.",
+    "date": "2024-03-27",
+    "thumb": "/Thumbnails/shelter.png",
+    "links": [
+      {
+        "displayText": "OnShape",
+        "url": "https://cad.onshape.com/documents/a54b6e0f62a3824814911c99/w/596cb1a10a93d8a0eebd478b/e/336c2f53ee64dad772964e8c?renderMode=0&uiState=6655fbb112bf0b675b2efcb3"
+      }
+    ],
+    "technologies": ["onshape"],
+    "display": false
+  },
+  {
+    "title": "Fire Fighting Maze Robot",
+    "tldr": "Autonomous fire fighting robot.",
+    "header": "/Headers/mazerbt.png",
+    "paragraph": "This robot was made for my Grade 12 computer tech class using OnShape. It features a pair of ultrasonic sensors, an infrared sensor and a temperature sensor. All the sensors communicate to the Arduino which controls the wheels and pump using a L298N motor driver. I also built the maze that our class used for this project as tasked by my teacher. \n\n Additionally I learnt how to make an enclosure for the robot which both serves structural and aesthetic purposes which taught me how to better account for tolerances when 3D printing. I also learnt how to implement a basic maze navivation algorithm.",
+    "date": "2024-05-29",
+    "thumb": "/Thumbnails/fireBot.png",
+    "links": [
+      {
+        "displayText": "OnShape",
+        "url": "https://cad.onshape.com/documents/be6a19b6cd8156f4d2462fe2/w/89b98f1e40a23d46c809e031/e/88d7c1ddbc091d987d4ed6c4?renderMode=0&uiState=6655fc63c9cafb19d42d6be7"
+      }
+    ],
+    "technologies": ["onshape", "arduino"],
+    "display": true
+  },
+  {
+    "title": "Dream House",
+    "tldr": "Dream house designed in Grade 12 Tech Design.",
+    "header": "/Headers/drmHouseHeader2.png",
+    "paragraph": "Made for my Grade 12 tech design class using Revit. Features many places to put a car including a car lift. Up to 14 people can comfortably sleep in this home, this includes a guest suite above the garage. Contains unique features such as an infinity pool, gym, theatre, conversation pit and a wine cellar.",
+    "date": "2024-05-29",
+    "thumb": "/Thumbnails/drmHouse.png",
+    "links": [
+      {
+        "displayText": "PDF",
+        "url": "https://drive.google.com/file/d/1YbHRbfNrMHDQimhHVAA0tkMaXc_kLmqk/view?usp=sharing"
+      }
+    ],
+    "technologies": ["revit"],
+    "display": false
+  },
+  {
+    "title": "Food Inc",
+    "tldr": "Android clicker game.",
+    "header": "/Headers/foodheader.png",
+    "paragraph": "I made this game for fun using the Unity game engine. I published this game on the Google Play Store on which it obtained many downloads. This was my first large-scale project supporting many operating systems and was updated to add more content numerous times.\n\n This game gives you the ability to buy different upgrades and evolve the food that you were producing. I used the popular game Egg Inc as heavy inspiration and as such lots of gameplay loops and styles are found in my game.",
+    "date": "2021-01-17",
+    "thumb": "/Thumbnails/food.png",
+    "links": [
+      {
+        "displayText": "Itch.io",
+        "url": "https://zushidev.itch.io/food-inc"
+      }
+    ],
+    "technologies": ["unity"],
+    "display": true
+  },
+  {
+    "title": "Zushi Online Games",
+    "tldr": "CoolMathGames copy.",
+    "header": "/Headers/onlineheader.png",
+    "paragraph": "I started developing this website in grade 7 and continued development throughout grade 8. I wanted to be able to share and show my games to my friends so I compiled all my Unity games to run in the web and uploaded it to the website. This website was my first exposure to developing and hosting websites.",
+    "date": "2019-02-13",
+    "thumb": "/Thumbnails/online.png",
+    "links": [
+      {
+        "displayText": "Website",
+        "url": "https://zushidev.github.io/index.html"
+      }
+    ],
+    "technologies": ["html", "css", "javascript"],
+    "display": false
+  },
+  {
+    "title": "ecoConnect",
+    "tldr": "Tool to find local produce.",
+    "header": "/Headers/ecoheader.png",
+    "paragraph": "I made this tool for the 2023 Spring Hacks Hackathon. This tool uses your location to show a sorted list of curated local produce stores. Each business has a latitude and longitude stored in the database which is put into the Haversine formula to determine the rough distance to the user. I attempted to write a script that would automatically grab business data from Google Maps but I wanted to avoid having to pay for API credits. I also tried to make a web scraper to get data without paying for an API but I could not guarentee the quality of the data provided to the user.",
+    "date": "2023-05-20",
+    "thumb": "/Thumbnails/eco.png",
+    "links": [
+      {
+        "displayText": "Website",
+        "url": "https://ecoconnect.netlify.app/"
+      }
+    ],
+    "technologies": ["html", "css", "javascript"],
+    "display": true
+  },
+  {
+    "title": "Basalt",
+    "tldr": "Javascript port of Caved.",
+    "header": "/Headers/basaltheader.png",
+    "paragraph": "Web conversion of Caved. I built this so I could play my game online and learn more Javascript.",
+    "date": "2022-05-11",
+    "thumb": "/Thumbnails/basalt.png",
+    "links": [
+      {
+        "displayText": "Website",
+        "url": "https://zushiedu.github.io/Basalt/"
+      }
+    ],
+    "technologies": ["html", "css", "javascript"],
+    "display": false
+  },
+  {
+    "title": "Rocketeer",
+    "tldr": "Simple arcade rocket sim.",
+    "header": "/Headers/rocketheader.png",
+    "paragraph": "2D simple rocket flying simulator. The goal of the game is to balance your rocket between the green lines. I created this game to learn the basics of 2D Java graphics and to learn how to implement basic physics.",
+    "date": "2022-02-22",
+    "thumb": "/Thumbnails/rocket.png",
+    "links": [
+      {
+        "displayText": "Github",
+        "url": "https://github.com/zushiEdu/Rocketeer"
+      }
+    ],
+    "technologies": ["java"],
+    "display": false
+  },
+  {
+    "title": "Calculator",
+    "tldr": "Desmos clone.",
+    "header": "/Headers/calcheader.png",
+    "paragraph": "A limited graphing calculator. The syntax recognition of this program is very picky and sensitive. This tool can draw polygons, and polynomials. I made this because I was curious how a graphing calculator drew math functions. I did not develop this tool very long as I quickly answered the question that inspired this project and got tired of programming functions to correctly interpret multiple styles of math syntax.",
+    "date": "2023-02-03",
+    "thumb": "/Thumbnails/calc.png",
+    "links": [
+      {
+        "displayText": "Github",
+        "url": "https://github.com/zushiEdu/Calculator"
+      }
+    ],
+    "technologies": ["html", "css", "javascript"],
+    "display": false
+  },
+  {
+    "title": "Ping Pong Ball Launcher",
+    "tldr": "Fully automatic.",
+    "header": "/Headers/launcherView2.png",
+    "paragraph": "In this project I designed a fully automatic ping pong ball launcher machine. The only thing that drives the machine is a single DC motor. The entire \"logic\" that fires ping pong balls is all mechanical. The motor rotates a gear with a linkage attached to it. The linkage pushes a shuttle back and forth in the left side of the slide. The slide resets and triggers the firing mechanism. The firing mechanism is wound up with a compression spring and triggered with a lever at the full back position of the slide. Ping pong balls are held in a simple 3D printed tube. The launcher was designed to be manufactured by a lazer cutter and a 3D printer allowing for cheap and easy construction.",
+    "date": "2024-05-24",
+    "thumb": "/Headers/ballLauncher.png",
+    "links": [
+      {
+        "displayText": "OnShape",
+        "url": "https://cad.onshape.com/documents/bc8b914e59e73b09c5f258d2/w/59bb2482e53130beb3e3fea8/e/84eb7c22d77e5c841a2044cc?renderMode=0&uiState=67b12ef3d88eae224b021111"
+      }
+    ],
+    "technologies": ["onshape"],
+    "display": true
+  }
+]
