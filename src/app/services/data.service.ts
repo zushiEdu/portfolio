@@ -4,6 +4,7 @@ import { map, Observable, shareReplay } from 'rxjs';
 import { Project, Photo } from '../models/project.interface';
 
 const ICONS: Record<string, string> = {
+  angular: 'angular.svg',
   onshape: 'onshape.png',
   arduino: 'arduino.png',
   css: 'css.png',
@@ -22,9 +23,9 @@ const ICONS: Record<string, string> = {
 
 const FEATURED_TITLES = [
   'Filedex',
-  '2024 Battle Bots',
+  'Agricultural Robot Project',
   'Power Distribution Board',
-  'Caved',
+  'Power Distribution Board 2',
   'Business Card',
   'Fan Controller Board',
 ];
@@ -71,6 +72,11 @@ export class DataService {
 
   static formatParagraph(text: string): string {
     return text
+      .replaceAll(/!\[([^\]]*)\]\(([^)]+)\)/g, (_, alt: string, src: string) =>
+        `<figure class="corematterFigure"><img class="corematterImg" src="${src}" alt="${alt}" loading="lazy">${
+          alt ? `<figcaption class="corematterCaption">${alt}</figcaption>` : ''
+        }</figure>`
+      )
       .replaceAll('\n', '<br>')
       .replaceAll(/\*\*\* (.+?) \*\*\*/g, '<h3>$1</h3>')
       .replaceAll(/\*\* (.+?) \*\*/g, '<h4>$1</h4>')

@@ -1,5 +1,25 @@
 [
   {
+    "title": "Agricultural Robot Project",
+    "tldr": "Ongoing development",
+    "date": "2026-05-30",
+    "thumb": "/Corematter/grp2board.jpeg",
+    "header": "/Headers/grp2header.png",
+    "paragraph": "- Custom aluminum laser cut and bent chassis\n- Custom STM32 control board with 4 MOSFET motor drivers for motor control, a UART connections, and an I2C bus\n- Raspberry Pi connection over UART\n- In progress GPS + IMU autonomous navigation with computer vision on the Raspberry Pi\n- Built an Angular remote control UI\n\n![Motor Control Board](/Corematter/grp2board.jpeg)\n\n![Robot CAD](/Corematter/grp2cad.jpeg)\n\n![Frame](/Corematter/grp2frame.jpeg)\n\n![Soldering](/Corematter/grp2soldering.jpeg)\n\n![Wheel](/Corematter/grp2wheel.jpg)\n\n\n\n![Robot Control Page](/Corematter/grp2web.png)",
+    "technologies": ["angular", "kicad", "stm32", "onshape", "javascript"],
+    "display": true
+  },
+  {
+    "title": "Power Distribution Board 2",
+    "tldr": "UofG Robotics Team Project",
+    "date": "2026-09-27",
+    "thumb": "/Thumbnails/pdbv3.png",
+    "header": "/Headers/pvbv3schematic.png",
+    "paragraph": "Improved version of the original power distribution board. Integreated buck/boost converter modules, higher current capacity, and smaller footprint.",
+    "technologies": ["kicad"],
+    "display": true
+  },
+  {
     "title": "Fan Controller Board",
     "tldr": "UofG Robotics Team Project",
     "date": "2026-01-18",
@@ -15,7 +35,7 @@
     "date": "2025-11-10",
     "thumb": "/Thumbnails/pdb.png",
     "header": "/Headers/pdbHeader.jpg",
-    "paragraph": "The power distribution board is a reliable and organized solution for managing power delivery to the UofG's rover's modules. The board was designed in KiCad, and supports and allocates power to various modules including some notable ones such as the Light, Arm, Fan, and Antenna boards. Each output was designed with its unique requirements in mind, ensuring correct routing and current capacity across all connections. \n\n A significant aspect of this project was the collaboration with team members, particularly with the mechanical subsection. Clear communication ensured the PCB's footprint met the constraints of the overall assembly. \n\n The board incorporates practices, such as dedicated ideal fuse protection for the major outputs, optimal power trace sizing, and connector orientations. Design decisions were influenced by past designs and collaboration with the team. \n\n A major struggle with this project was configuring the board in such a way that the converters would be close to the outputs but also fit within the board size requirements. I ended up deciding to mount the converters on top of the board on a tray. This is why there is a higher than normal count of connectors on the board. ",
+    "paragraph": "The power distribution board is a reliable and organized solution for managing power delivery to the UofG's rover's modules. The board was designed in KiCad, and supports and allocates power to various modules including some notable ones such as the Light, Arm, Fan, and Antenna boards. Each output was designed with its unique requirements in mind, ensuring correct routing and current capacity across all connections. \n\n A significant aspect of this project was the collaboration with team members, particularly with the mechanical subsection. Clear communication ensured the PCB's footprint met the constraints of the overall assembly. \n\n The board incorporates practices, such as dedicated ideal fuse protection for the major outputs, optimal power trace sizing, and connector orientations. Design decisions were influenced by past designs and collaboration with the team. \n\n A major struggle with this project was configuring the board in such a way that the converters would be close to the outputs but also fit within the board size requirements. I ended up deciding to mount the converters on top of the board on a tray. This is why there is a higher than normal count of connectors on the board. \n\n![Testing](/Corematter/pdbv1.jpeg)",
     "technologies": ["onshape", "kicad"],
     "display": true
   },
@@ -25,7 +45,7 @@
     "date": "2026-01-10",
     "thumb": "/Thumbnails/bcFront.jpg",
     "header": "/Headers/bcHeader.png",
-    "paragraph": "This is my business card. My business card is a PCB, using the STM32F103C8T6 microcontroller as it's brain. \n\nThe STM32 is connected to 6 push buttons and a 12x12 LED matrix. The push buttons and LED matrix are laid out to look like a GameBoy Classic. \n\nThe business card has a collection of common engineering related symbols, values, equations, and footprints on the back. The STM32 is programmed to simulate John Conway's Game of Life. \n\nThe push buttons allow you to control the game board and the power of the system. The Up/Down/Left/Right buttons move the cursor around when in edit mode. While in edit mode, a cursor will flash and the user can press B to toggle the selected pixel. To Pause/Play the game, the user can press A. While the game is paused the user can edit the board. \n\nSome cool patterns are printed across the front of the PCB. The QR code to my portfolio, and some contact info is also on the front of the PCB. \n\n This project was inspired by Mixtela's StyloCard.",
+    "paragraph": "This is my business card. My business card is a PCB, using the STM32F103C8T6 microcontroller as it's brain. \n\nThe STM32 is connected to 6 push buttons and a 12x12 LED matrix. The push buttons and LED matrix are laid out to look like a GameBoy Classic. \n\nThe business card has a collection of common engineering related symbols, values, equations, and footprints on the back. The STM32 is programmed to simulate John Conway's Game of Life. \n\nThe push buttons allow you to control the game board and the power of the system. The Up/Down/Left/Right buttons move the cursor around when in edit mode. While in edit mode, a cursor will flash and the user can press B to toggle the selected pixel. To Pause/Play the game, the user can press A. While the game is paused the user can edit the board. \n\nSome cool patterns are printed across the front of the PCB. The QR code to my portfolio, and some contact info is also on the front of the PCB. \n\n This project was inspired by Mixtela's StyloCard.\n\n![Business Card Front](/Thumbnails/bcFront.jpg)",
     "links": [
       {
         "displayText": "GitHub",
@@ -64,14 +84,7 @@
         "url": "https://github.com/zushiEdu/basicmessanger"
       }
     ],
-    "technologies": [
-      "html",
-      "css",
-      "javascript",
-      "unraid",
-      "golang",
-      "mariadb"
-    ],
+    "technologies": ["html", "css", "javascript", "unraid", "golang", "mariadb"],
     "display": true
   },
   {
