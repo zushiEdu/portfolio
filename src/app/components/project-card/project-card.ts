@@ -16,8 +16,6 @@ import type { Project } from '../../models/project.interface';
     section {
       flex: 1;
       min-height: 0;
-      border-radius: 5%;
-      overflow: hidden;
     }
   `,
 })
